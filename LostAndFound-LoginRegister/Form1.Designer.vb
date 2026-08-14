@@ -38,7 +38,7 @@ Partial Class loginForm
         Label1.Font = New Font("Segoe UI Semibold", 75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
         Label1.LiveSetting = Automation.AutomationLiveSetting.Assertive
-        Label1.Location = New Point(1270, 86)
+        Label1.Location = New Point(1236, 170)
         Label1.Name = "Label1"
         Label1.Size = New Size(333, 133)
         Label1.TabIndex = 0
@@ -49,7 +49,7 @@ Partial Class loginForm
         usrBox.BackColor = Color.SteelBlue
         usrBox.Font = New Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         usrBox.ForeColor = SystemColors.ScrollBar
-        usrBox.Location = New Point(1284, 287)
+        usrBox.Location = New Point(1250, 371)
         usrBox.Name = "usrBox"
         usrBox.Size = New Size(293, 33)
         usrBox.TabIndex = 1
@@ -60,7 +60,7 @@ Partial Class loginForm
         loginbtn.BackColor = Color.DodgerBlue
         loginbtn.Font = New Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         loginbtn.ForeColor = Color.White
-        loginbtn.Location = New Point(1361, 454)
+        loginbtn.Location = New Point(1327, 526)
         loginbtn.Name = "loginbtn"
         loginbtn.Size = New Size(137, 33)
         loginbtn.TabIndex = 2
@@ -72,7 +72,7 @@ Partial Class loginForm
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(1284, 548)
+        Label2.Location = New Point(1282, 606)
         Label2.Name = "Label2"
         Label2.Size = New Size(171, 21)
         Label2.TabIndex = 3
@@ -84,7 +84,7 @@ Partial Class loginForm
         registryLink.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         registryLink.ForeColor = Color.FromArgb(CByte(59), CByte(54), CByte(75))
         registryLink.LinkColor = Color.DodgerBlue
-        registryLink.Location = New Point(1451, 548)
+        registryLink.Location = New Point(1449, 606)
         registryLink.Name = "registryLink"
         registryLink.Size = New Size(58, 21)
         registryLink.TabIndex = 4
@@ -106,7 +106,7 @@ Partial Class loginForm
         passwordBox.BackColor = Color.SteelBlue
         passwordBox.Font = New Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         passwordBox.ForeColor = Color.DarkGray
-        passwordBox.Location = New Point(1284, 363)
+        passwordBox.Location = New Point(1250, 447)
         passwordBox.Name = "passwordBox"
         passwordBox.Size = New Size(293, 33)
         passwordBox.TabIndex = 6
@@ -118,7 +118,7 @@ Partial Class loginForm
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(0), CByte(74), CByte(150))
         CausesValidation = False
-        ClientSize = New Size(1904, 1041)
+        ClientSize = New Size(1811, 901)
         Controls.Add(passwordBox)
         Controls.Add(Panel1)
         Controls.Add(registryLink)

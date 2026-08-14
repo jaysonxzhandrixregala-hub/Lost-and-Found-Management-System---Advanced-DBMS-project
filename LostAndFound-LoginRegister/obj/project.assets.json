@@ -236,24 +236,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC-5\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\thean\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LostAndFound-LoginRegister\\LostAndFound-LoginRegister\\LostAndFound-LoginRegister.vbproj",
+      "projectUniqueName": "C:\\Project\\LostAndFound\\Lost-and-Found-Management-System---Advanced-DBMS-project-master\\LostAndFound-LoginRegister\\LostAndFound-LoginRegister.vbproj",
       "projectName": "LostAndFound-LoginRegister",
-      "projectPath": "D:\\LostAndFound-LoginRegister\\LostAndFound-LoginRegister\\LostAndFound-LoginRegister.vbproj",
-      "packagesPath": "C:\\Users\\PC-5\\.nuget\\packages\\",
-      "outputPath": "D:\\LostAndFound-LoginRegister\\LostAndFound-LoginRegister\\obj\\",
+      "projectPath": "C:\\Project\\LostAndFound\\Lost-and-Found-Management-System---Advanced-DBMS-project-master\\LostAndFound-LoginRegister\\LostAndFound-LoginRegister.vbproj",
+      "packagesPath": "C:\\Users\\thean\\.nuget\\packages\\",
+      "outputPath": "C:\\Project\\LostAndFound\\Lost-and-Found-Management-System---Advanced-DBMS-project-master\\LostAndFound-LoginRegister\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\PC-5\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\thean\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
