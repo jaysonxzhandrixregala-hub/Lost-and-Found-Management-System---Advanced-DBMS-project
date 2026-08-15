@@ -48,7 +48,11 @@ Partial Class loginForm
         ' 
         usrBox.BackColor = Color.SteelBlue
         usrBox.Font = New Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+<<<<<<< HEAD
+        usrBox.ForeColor = SystemColors.InactiveCaptionText
+=======
         usrBox.ForeColor = SystemColors.ScrollBar
+>>>>>>> origin/master
         usrBox.Location = New Point(1250, 371)
         usrBox.Name = "usrBox"
         usrBox.Size = New Size(293, 33)
