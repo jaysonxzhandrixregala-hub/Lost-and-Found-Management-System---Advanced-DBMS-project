@@ -15,7 +15,7 @@ Public Class registryForm
 
     Private Sub registryForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
-        client = New MongoClient("mongodb+srv://lostandfound:lost_found123@cluster0.7iovwjg.mongodb.net/")
+        client = New MongoClient("/Users/jumong/Desktop/Lost-and-Found-Management-System---Advanced-DBMS-project-master/.env")
         database = client.GetDatabase("lost_and_foundDB")
     End Sub
 

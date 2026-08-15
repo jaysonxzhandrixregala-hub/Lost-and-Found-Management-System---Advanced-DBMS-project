@@ -31,7 +31,7 @@ Public Class loginForm
 
     Private Sub loginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
-        client = New MongoClient("mongodb+srv://lostandfound:lost_found123@cluster0.7iovwjg.mongodb.net/") 'connection string from cluster
+        client = New MongoClient("/Users/jumong/Desktop/Lost-and-Found-Management-System---Advanced-DBMS-project-master/.env") 'connection string from cluster
         database = client.GetDatabase("lost_and_foundDB")
     End Sub
 
