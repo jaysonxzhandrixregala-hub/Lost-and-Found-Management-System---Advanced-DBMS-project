@@ -33,10 +33,10 @@ Partial Class Form3
         ' welcomelabel
         ' 
         welcomelabel.AutoSize = True
-        welcomelabel.Font = New Font("Poor Richard", 150F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        welcomelabel.Font = New Font("Microsoft Sans Serif", 150F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         welcomelabel.Location = New Point(531, 19)
         welcomelabel.Name = "welcomelabel"
-        welcomelabel.Size = New Size(856, 226)
+        welcomelabel.Size = New Size(992, 226)
         welcomelabel.TabIndex = 0
         welcomelabel.Text = "Welcome!"
         ' 

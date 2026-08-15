@@ -30,7 +30,8 @@ Public Class loginForm
     End Sub
 
     Private Sub loginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        client = New MongoClient("mongodb://ac-p524th-shard-00-01.7iovwjg.mongodb.net:27017")
+        Me.CenterToScreen()
+        client = New MongoClient("mongodb+srv://lostandfound:lost_found123@cluster0.7iovwjg.mongodb.net/") 'connection string from cluster
         database = client.GetDatabase("lost_and_foundDB")
     End Sub
 
@@ -39,6 +40,13 @@ Public Class loginForm
         'basic input validation, check if all fields are empty
         If String.IsNullOrWhiteSpace(usrBox.Text) OrElse
            String.IsNullOrWhiteSpace(passwordBox.Text) Then
+
+            MessageBox.Show("Please fill in all required fields.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
+        If usrBox.Text = "Username" OrElse
+            passwordBox.Text = "Password" Then
 
             MessageBox.Show("Please fill in all required fields.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
@@ -54,7 +62,7 @@ Public Class loginForm
         Dim user = login.Find(filter).FirstOrDefault()
 
         If user IsNot Nothing Then
-            lostfoundDashbord.Show()
+            Form3.Show()
             Me.Hide()
         Else
             MessageBox.Show("Invalid Email Or Password")

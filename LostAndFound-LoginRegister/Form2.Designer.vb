@@ -23,11 +23,11 @@ Partial Class registryForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         registry_lbl = New Label()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
-        username_textbox = New TextBox()
-        email_textbox = New TextBox()
-        password_textbox = New TextBox()
+        fnameBox = New TextBox()
+        lnameBox = New TextBox()
+        usernameBox = New TextBox()
+        emailBox = New TextBox()
+        passwordBox = New TextBox()
         register_button = New Button()
         Label1 = New Label()
         loginlink = New LinkLabel()
@@ -47,65 +47,65 @@ Partial Class registryForm
         registry_lbl.TabIndex = 0
         registry_lbl.Text = "Registration Form"
         ' 
-        ' TextBox1
+        ' fnameBox
         ' 
-        TextBox1.BackColor = Color.SteelBlue
-        TextBox1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox1.ForeColor = SystemColors.ScrollBar
-        TextBox1.Location = New Point(193, 221)
-        TextBox1.Margin = New Padding(2, 1, 2, 1)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(258, 29)
-        TextBox1.TabIndex = 1
-        TextBox1.Text = "First Name"
+        fnameBox.BackColor = Color.SteelBlue
+        fnameBox.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        fnameBox.ForeColor = SystemColors.ScrollBar
+        fnameBox.Location = New Point(193, 221)
+        fnameBox.Margin = New Padding(2, 1, 2, 1)
+        fnameBox.Name = "fnameBox"
+        fnameBox.Size = New Size(258, 29)
+        fnameBox.TabIndex = 1
+        fnameBox.Text = "First Name"
         ' 
-        ' TextBox2
+        ' lnameBox
         ' 
-        TextBox2.BackColor = Color.SteelBlue
-        TextBox2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox2.ForeColor = SystemColors.ScrollBar
-        TextBox2.Location = New Point(471, 221)
-        TextBox2.Margin = New Padding(2, 1, 2, 1)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(258, 29)
-        TextBox2.TabIndex = 2
-        TextBox2.Text = "Last Name"
+        lnameBox.BackColor = Color.SteelBlue
+        lnameBox.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lnameBox.ForeColor = SystemColors.ScrollBar
+        lnameBox.Location = New Point(471, 221)
+        lnameBox.Margin = New Padding(2, 1, 2, 1)
+        lnameBox.Name = "lnameBox"
+        lnameBox.Size = New Size(258, 29)
+        lnameBox.TabIndex = 2
+        lnameBox.Text = "Last Name"
         ' 
-        ' username_textbox
+        ' usernameBox
         ' 
-        username_textbox.BackColor = Color.SteelBlue
-        username_textbox.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        username_textbox.ForeColor = SystemColors.ScrollBar
-        username_textbox.Location = New Point(193, 309)
-        username_textbox.Margin = New Padding(2, 1, 2, 1)
-        username_textbox.Name = "username_textbox"
-        username_textbox.Size = New Size(536, 29)
-        username_textbox.TabIndex = 3
-        username_textbox.Text = "Username"
+        usernameBox.BackColor = Color.SteelBlue
+        usernameBox.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        usernameBox.ForeColor = SystemColors.ScrollBar
+        usernameBox.Location = New Point(193, 309)
+        usernameBox.Margin = New Padding(2, 1, 2, 1)
+        usernameBox.Name = "usernameBox"
+        usernameBox.Size = New Size(536, 29)
+        usernameBox.TabIndex = 3
+        usernameBox.Text = "Username"
         ' 
-        ' email_textbox
+        ' emailBox
         ' 
-        email_textbox.BackColor = Color.SteelBlue
-        email_textbox.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        email_textbox.ForeColor = SystemColors.ScrollBar
-        email_textbox.Location = New Point(193, 388)
-        email_textbox.Margin = New Padding(2, 1, 2, 1)
-        email_textbox.Name = "email_textbox"
-        email_textbox.Size = New Size(536, 29)
-        email_textbox.TabIndex = 5
-        email_textbox.Text = "Email"
+        emailBox.BackColor = Color.SteelBlue
+        emailBox.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        emailBox.ForeColor = SystemColors.ScrollBar
+        emailBox.Location = New Point(193, 388)
+        emailBox.Margin = New Padding(2, 1, 2, 1)
+        emailBox.Name = "emailBox"
+        emailBox.Size = New Size(536, 29)
+        emailBox.TabIndex = 5
+        emailBox.Text = "Email"
         ' 
-        ' password_textbox
+        ' passwordBox
         ' 
-        password_textbox.BackColor = Color.SteelBlue
-        password_textbox.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        password_textbox.ForeColor = SystemColors.ScrollBar
-        password_textbox.Location = New Point(193, 476)
-        password_textbox.Margin = New Padding(2, 1, 2, 1)
-        password_textbox.Name = "password_textbox"
-        password_textbox.Size = New Size(536, 29)
-        password_textbox.TabIndex = 6
-        password_textbox.Text = "Password"
+        passwordBox.BackColor = Color.SteelBlue
+        passwordBox.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        passwordBox.ForeColor = SystemColors.ScrollBar
+        passwordBox.Location = New Point(193, 476)
+        passwordBox.Margin = New Padding(2, 1, 2, 1)
+        passwordBox.Name = "passwordBox"
+        passwordBox.Size = New Size(536, 29)
+        passwordBox.TabIndex = 6
+        passwordBox.Text = "Password"
         ' 
         ' register_button
         ' 
@@ -150,13 +150,13 @@ Partial Class registryForm
         Panel1.BackColor = Color.FromArgb(CByte(0), CByte(74), CByte(150))
         Panel1.Controls.Add(registry_lbl)
         Panel1.Controls.Add(loginlink)
-        Panel1.Controls.Add(TextBox1)
+        Panel1.Controls.Add(fnameBox)
         Panel1.Controls.Add(Label1)
-        Panel1.Controls.Add(TextBox2)
+        Panel1.Controls.Add(lnameBox)
         Panel1.Controls.Add(register_button)
-        Panel1.Controls.Add(username_textbox)
-        Panel1.Controls.Add(password_textbox)
-        Panel1.Controls.Add(email_textbox)
+        Panel1.Controls.Add(usernameBox)
+        Panel1.Controls.Add(passwordBox)
+        Panel1.Controls.Add(emailBox)
         Panel1.ForeColor = Color.Transparent
         Panel1.Location = New Point(564, 101)
         Panel1.Name = "Panel1"
@@ -181,11 +181,11 @@ Partial Class registryForm
     End Sub
 
     Friend WithEvents registry_lbl As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents username_textbox As TextBox
-    Friend WithEvents email_textbox As TextBox
-    Friend WithEvents password_textbox As TextBox
+    Friend WithEvents fnameBox As TextBox
+    Friend WithEvents lnameBox As TextBox
+    Friend WithEvents usernameBox As TextBox
+    Friend WithEvents emailBox As TextBox
+    Friend WithEvents passwordBox As TextBox
     Friend WithEvents register_button As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents loginlink As LinkLabel
