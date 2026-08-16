@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Project\\LostAndFound\\Lost-and-Found-Management-System---Advanced-DBMS-project-master\\LostAndFound-LoginRegister\\LostAndFound-LoginRegister.vbproj": {}
+    "C:\\dev\\Lost-and-Found-Management-System---Advanced-DBMS-project-master\\LostAndFound-LoginRegister\\LostAndFound-LoginRegister.vbproj": {}
   },
   "projects": {
-    "C:\\Project\\LostAndFound\\Lost-and-Found-Management-System---Advanced-DBMS-project-master\\LostAndFound-LoginRegister\\LostAndFound-LoginRegister.vbproj": {
+    "C:\\dev\\Lost-and-Found-Management-System---Advanced-DBMS-project-master\\LostAndFound-LoginRegister\\LostAndFound-LoginRegister.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Project\\LostAndFound\\Lost-and-Found-Management-System---Advanced-DBMS-project-master\\LostAndFound-LoginRegister\\LostAndFound-LoginRegister.vbproj",
+        "projectUniqueName": "C:\\dev\\Lost-and-Found-Management-System---Advanced-DBMS-project-master\\LostAndFound-LoginRegister\\LostAndFound-LoginRegister.vbproj",
         "projectName": "LostAndFound-LoginRegister",
-        "projectPath": "C:\\Project\\LostAndFound\\Lost-and-Found-Management-System---Advanced-DBMS-project-master\\LostAndFound-LoginRegister\\LostAndFound-LoginRegister.vbproj",
+        "projectPath": "C:\\dev\\Lost-and-Found-Management-System---Advanced-DBMS-project-master\\LostAndFound-LoginRegister\\LostAndFound-LoginRegister.vbproj",
         "packagesPath": "C:\\Users\\thean\\.nuget\\packages\\",
-        "outputPath": "C:\\Project\\LostAndFound\\Lost-and-Found-Management-System---Advanced-DBMS-project-master\\LostAndFound-LoginRegister\\obj\\",
+        "outputPath": "C:\\dev\\Lost-and-Found-Management-System---Advanced-DBMS-project-master\\LostAndFound-LoginRegister\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thean\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,6 +48,10 @@
           "framework": "net10.0-windows7.0",
           "targetAlias": "net10.0-windows",
           "dependencies": {
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[3.11.0, )"
