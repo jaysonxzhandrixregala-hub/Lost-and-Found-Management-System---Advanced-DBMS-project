@@ -21,11 +21,6 @@ Public Class registryForm
         Env.Load()
         Dim mongoUri As String = Environment.GetEnvironmentVariable("MONGODB_URI")
 
-        If String.IsNullOrEmpty(mongoUri) Then
-            MessageBox.Show("Error: MONGODB_URI could not be loaded from .env!")
-            Exit Sub
-        End If
-
         client = New MongoClient(mongoUri)
         database = client.GetDatabase("lost_and_foundDB")
     End Sub
