@@ -44,10 +44,10 @@ Partial Class Form4
         ' createitemlabel
         ' 
         createitemlabel.AutoSize = True
-        createitemlabel.Font = New Font("Segoe UI", 72F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        createitemlabel.Location = New Point(661, 69)
+        createitemlabel.Font = New Font("Segoe UI Semibold", 72F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        createitemlabel.Location = New Point(682, 65)
         createitemlabel.Name = "createitemlabel"
-        createitemlabel.Size = New Size(652, 128)
+        createitemlabel.Size = New Size(631, 128)
         createitemlabel.TabIndex = 0
         createitemlabel.Text = "CREATE ITEM"
         ' 
@@ -63,136 +63,138 @@ Partial Class Form4
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(616, 251)
+        Label1.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(569, 251)
         Label1.Name = "Label1"
-        Label1.Size = New Size(154, 37)
+        Label1.Size = New Size(166, 40)
         Label1.TabIndex = 2
         Label1.Text = "Item Name:"
         ' 
         ' TextBox1
         ' 
-        TextBox1.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox1.Location = New Point(797, 248)
+        TextBox1.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox1.Location = New Point(775, 248)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(375, 43)
+        TextBox1.Size = New Size(657, 46)
         TextBox1.TabIndex = 3
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(612, 359)
+        Label2.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(568, 353)
         Label2.Name = "Label2"
-        Label2.Size = New Size(158, 37)
+        Label2.Size = New Size(167, 40)
         Label2.TabIndex = 4
         Label2.Text = "Description:"
         ' 
         ' TextBox2
         ' 
-        TextBox2.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox2.Location = New Point(797, 353)
+        TextBox2.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox2.Location = New Point(775, 353)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(375, 43)
+        TextBox2.Size = New Size(657, 46)
         TextBox2.TabIndex = 5
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(639, 456)
+        Label3.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.Location = New Point(596, 456)
         Label3.Name = "Label3"
-        Label3.Size = New Size(131, 37)
+        Label3.Size = New Size(139, 40)
         Label3.TabIndex = 6
         Label3.Text = "Category:"
         ' 
         ' TextBox3
         ' 
-        TextBox3.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox3.Location = New Point(797, 450)
+        TextBox3.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox3.Location = New Point(775, 456)
         TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(375, 43)
+        TextBox3.Size = New Size(657, 46)
         TextBox3.TabIndex = 7
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(503, 571)
+        Label4.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label4.Location = New Point(451, 565)
         Label4.Name = "Label4"
-        Label4.Size = New Size(267, 37)
+        Label4.Size = New Size(284, 40)
         Label4.TabIndex = 8
         Label4.Text = "Location Found/Lost:"
         ' 
         ' TextBox4
         ' 
         TextBox4.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox4.Location = New Point(797, 565)
+        TextBox4.Location = New Point(775, 565)
         TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(375, 43)
+        TextBox4.Size = New Size(657, 43)
         TextBox4.TabIndex = 9
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(691, 679)
+        Label5.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label5.Location = New Point(652, 673)
         Label5.Name = "Label5"
-        Label5.Size = New Size(79, 37)
+        Label5.Size = New Size(83, 40)
         Label5.TabIndex = 10
         Label5.Text = "Date:"
         ' 
         ' TextBox5
         ' 
-        TextBox5.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox5.Location = New Point(797, 676)
+        TextBox5.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox5.Location = New Point(775, 673)
         TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(375, 43)
+        TextBox5.Size = New Size(657, 46)
         TextBox5.TabIndex = 11
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(676, 800)
+        Label6.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label6.Location = New Point(635, 794)
         Label6.Name = "Label6"
-        Label6.Size = New Size(94, 37)
+        Label6.Size = New Size(100, 40)
         Label6.TabIndex = 12
         Label6.Text = "Status:"
         ' 
         ' TextBox6
         ' 
-        TextBox6.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox6.Location = New Point(797, 794)
+        TextBox6.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox6.Location = New Point(775, 791)
         TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(375, 43)
+        TextBox6.Size = New Size(657, 46)
         TextBox6.TabIndex = 13
         ' 
         ' savebutton
         ' 
         savebutton.BackColor = Color.PaleGreen
-        savebutton.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        savebutton.Location = New Point(847, 939)
+        savebutton.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        savebutton.Location = New Point(798, 916)
         savebutton.Name = "savebutton"
-        savebutton.Size = New Size(137, 44)
+        savebutton.Size = New Size(234, 56)
         savebutton.TabIndex = 14
         savebutton.Text = "Save"
         savebutton.UseVisualStyleBackColor = False
         ' 
         ' clearbutton
         ' 
-        clearbutton.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        clearbutton.Location = New Point(1114, 939)
+        clearbutton.BackColor = SystemColors.ActiveBorder
+        clearbutton.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        clearbutton.Location = New Point(1115, 916)
         clearbutton.Name = "clearbutton"
-        clearbutton.Size = New Size(137, 44)
+        clearbutton.Size = New Size(234, 56)
         clearbutton.TabIndex = 15
         clearbutton.Text = "Clear"
-        clearbutton.UseVisualStyleBackColor = True
+        clearbutton.UseVisualStyleBackColor = False
         ' 
         ' Form4
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.DarkSeaGreen
         ClientSize = New Size(1904, 1041)
         Controls.Add(clearbutton)
         Controls.Add(savebutton)

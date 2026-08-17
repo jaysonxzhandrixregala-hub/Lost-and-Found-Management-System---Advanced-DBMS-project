@@ -34,7 +34,7 @@ Partial Class Form3
         ' 
         welcomelabel.AutoSize = True
         welcomelabel.Font = New Font("Microsoft Sans Serif", 150F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        welcomelabel.Location = New Point(531, 19)
+        welcomelabel.Location = New Point(498, 25)
         welcomelabel.Name = "welcomelabel"
         welcomelabel.Size = New Size(992, 226)
         welcomelabel.TabIndex = 0
@@ -86,18 +86,20 @@ Partial Class Form3
         ' 
         ' logoutbutton
         ' 
+        logoutbutton.BackColor = SystemColors.ActiveBorder
         logoutbutton.Font = New Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        logoutbutton.Location = New Point(749, 853)
+        logoutbutton.Location = New Point(341, 848)
         logoutbutton.Name = "logoutbutton"
-        logoutbutton.Size = New Size(440, 99)
+        logoutbutton.Size = New Size(1284, 123)
         logoutbutton.TabIndex = 5
         logoutbutton.Text = "Log Out"
-        logoutbutton.UseVisualStyleBackColor = True
+        logoutbutton.UseVisualStyleBackColor = False
         ' 
         ' Form3
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.SkyBlue
         ClientSize = New Size(1904, 1041)
         Controls.Add(logoutbutton)
         Controls.Add(deleteitembutton)

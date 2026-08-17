@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> feat/design-dash-forms
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
@@ -118,6 +121,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+<<<<<<< HEAD
 =======
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
@@ -239,4 +243,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 >>>>>>> 6daa593922f2f4b28e5eab698b0a084c6d11ffe8
+=======
+>>>>>>> feat/design-dash-forms
 </root>

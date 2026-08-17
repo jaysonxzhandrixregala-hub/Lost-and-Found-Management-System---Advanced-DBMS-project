@@ -50,71 +50,71 @@ Partial Class registryForm
         ' fnameBox
         ' 
         fnameBox.BackColor = Color.SteelBlue
-        fnameBox.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        fnameBox.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         fnameBox.ForeColor = SystemColors.ScrollBar
         fnameBox.Location = New Point(193, 221)
         fnameBox.Margin = New Padding(2, 1, 2, 1)
         fnameBox.Name = "fnameBox"
-        fnameBox.Size = New Size(258, 29)
+        fnameBox.Size = New Size(258, 43)
         fnameBox.TabIndex = 1
         fnameBox.Text = "First Name"
         ' 
         ' lnameBox
         ' 
         lnameBox.BackColor = Color.SteelBlue
-        lnameBox.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lnameBox.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         lnameBox.ForeColor = SystemColors.ScrollBar
         lnameBox.Location = New Point(471, 221)
         lnameBox.Margin = New Padding(2, 1, 2, 1)
         lnameBox.Name = "lnameBox"
-        lnameBox.Size = New Size(258, 29)
+        lnameBox.Size = New Size(258, 43)
         lnameBox.TabIndex = 2
         lnameBox.Text = "Last Name"
         ' 
         ' usernameBox
         ' 
         usernameBox.BackColor = Color.SteelBlue
-        usernameBox.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        usernameBox.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         usernameBox.ForeColor = SystemColors.ScrollBar
         usernameBox.Location = New Point(193, 309)
         usernameBox.Margin = New Padding(2, 1, 2, 1)
         usernameBox.Name = "usernameBox"
-        usernameBox.Size = New Size(536, 29)
+        usernameBox.Size = New Size(536, 43)
         usernameBox.TabIndex = 3
         usernameBox.Text = "Username"
         ' 
         ' emailBox
         ' 
         emailBox.BackColor = Color.SteelBlue
-        emailBox.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        emailBox.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         emailBox.ForeColor = SystemColors.ScrollBar
-        emailBox.Location = New Point(193, 388)
+        emailBox.Location = New Point(193, 395)
         emailBox.Margin = New Padding(2, 1, 2, 1)
         emailBox.Name = "emailBox"
-        emailBox.Size = New Size(536, 29)
+        emailBox.Size = New Size(536, 43)
         emailBox.TabIndex = 5
         emailBox.Text = "Email"
         ' 
         ' passwordBox
         ' 
         passwordBox.BackColor = Color.SteelBlue
-        passwordBox.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        passwordBox.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         passwordBox.ForeColor = SystemColors.ScrollBar
         passwordBox.Location = New Point(193, 476)
         passwordBox.Margin = New Padding(2, 1, 2, 1)
         passwordBox.Name = "passwordBox"
-        passwordBox.Size = New Size(536, 29)
+        passwordBox.Size = New Size(536, 43)
         passwordBox.TabIndex = 6
         passwordBox.Text = "Password"
         ' 
         ' register_button
         ' 
         register_button.BackColor = Color.DodgerBlue
-        register_button.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        register_button.Location = New Point(579, 567)
+        register_button.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        register_button.Location = New Point(506, 576)
         register_button.Margin = New Padding(2, 1, 2, 1)
         register_button.Name = "register_button"
-        register_button.Size = New Size(150, 34)
+        register_button.Size = New Size(223, 46)
         register_button.TabIndex = 7
         register_button.Text = "Register"
         register_button.UseVisualStyleBackColor = False
@@ -122,25 +122,25 @@ Partial Class registryForm
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
         Label1.Location = New Point(203, 701)
         Label1.Margin = New Padding(2, 0, 2, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(186, 21)
+        Label1.Size = New Size(251, 30)
         Label1.TabIndex = 8
         Label1.Text = "Already have an account?"
         ' 
         ' loginlink
         ' 
         loginlink.AutoSize = True
-        loginlink.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        loginlink.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         loginlink.ForeColor = Color.White
         loginlink.LinkColor = Color.DodgerBlue
-        loginlink.Location = New Point(383, 701)
+        loginlink.Location = New Point(447, 701)
         loginlink.Margin = New Padding(2, 0, 2, 0)
         loginlink.Name = "loginlink"
-        loginlink.Size = New Size(53, 21)
+        loginlink.Size = New Size(71, 30)
         loginlink.TabIndex = 9
         loginlink.TabStop = True
         loginlink.Text = "Log In"
@@ -167,7 +167,7 @@ Partial Class registryForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.LightGray
+        BackColor = Color.SteelBlue
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1904, 1041)
         Controls.Add(Panel1)

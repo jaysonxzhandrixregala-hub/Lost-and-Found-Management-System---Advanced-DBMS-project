@@ -16,6 +16,12 @@
     <Compile Update="Form5.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Form6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form7.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="lostfoundDashbord.vb">
       <SubType>Form</SubType>
     </Compile>
