@@ -43,20 +43,18 @@ Partial Class view_window
         ' 
         Panel1.BackColor = Color.DeepSkyBlue
         Panel1.Controls.Add(rvitemslabel)
-        Panel1.Location = New Point(-6, -33)
-        Panel1.Margin = New Padding(4, 5, 4, 5)
+        Panel1.Location = New Point(-4, -20)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(2731, 342)
+        Panel1.Size = New Size(1912, 205)
         Panel1.TabIndex = 0
         ' 
         ' rvitemslabel
         ' 
         rvitemslabel.AutoSize = True
         rvitemslabel.Font = New Font("Segoe UI Semibold", 72F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        rvitemslabel.Location = New Point(759, 82)
-        rvitemslabel.Margin = New Padding(4, 0, 4, 0)
+        rvitemslabel.Location = New Point(531, 49)
         rvitemslabel.Name = "rvitemslabel"
-        rvitemslabel.Size = New Size(1383, 191)
+        rvitemslabel.Size = New Size(923, 128)
         rvitemslabel.TabIndex = 0
         rvitemslabel.Text = "READ / VIEW ITEMS"
         ' 
@@ -64,30 +62,27 @@ Partial Class view_window
         ' 
         searchlabel.AutoSize = True
         searchlabel.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        searchlabel.Location = New Point(780, 412)
-        searchlabel.Margin = New Padding(4, 0, 4, 0)
+        searchlabel.Location = New Point(546, 247)
         searchlabel.Name = "searchlabel"
-        searchlabel.Size = New Size(163, 60)
+        searchlabel.Size = New Size(107, 40)
         searchlabel.TabIndex = 1
         searchlabel.Text = "Search:"
         ' 
         ' TextBox1
         ' 
         TextBox1.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox1.Location = New Point(1007, 407)
-        TextBox1.Margin = New Padding(4, 5, 4, 5)
+        TextBox1.Location = New Point(705, 244)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(590, 65)
+        TextBox1.Size = New Size(414, 46)
         TextBox1.TabIndex = 2
         ' 
         ' searchbutton
         ' 
         searchbutton.BackColor = SystemColors.ActiveBorder
         searchbutton.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        searchbutton.Location = New Point(1657, 403)
-        searchbutton.Margin = New Padding(4, 5, 4, 5)
+        searchbutton.Location = New Point(1160, 242)
         searchbutton.Name = "searchbutton"
-        searchbutton.Size = New Size(334, 85)
+        searchbutton.Size = New Size(234, 51)
         searchbutton.TabIndex = 3
         searchbutton.Text = "Search"
         searchbutton.UseVisualStyleBackColor = False
@@ -96,10 +91,9 @@ Partial Class view_window
         ' 
         viewClose_btn.BackColor = SystemColors.ActiveBorder
         viewClose_btn.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        viewClose_btn.Location = New Point(1641, 1513)
-        viewClose_btn.Margin = New Padding(4, 5, 4, 5)
+        viewClose_btn.Location = New Point(1149, 908)
         viewClose_btn.Name = "viewClose_btn"
-        viewClose_btn.Size = New Size(334, 102)
+        viewClose_btn.Size = New Size(234, 61)
         viewClose_btn.TabIndex = 5
         viewClose_btn.Text = "Close"
         viewClose_btn.UseVisualStyleBackColor = False
@@ -108,11 +102,10 @@ Partial Class view_window
         ' 
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView1.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column6})
-        DataGridView1.Location = New Point(793, 607)
-        DataGridView1.Margin = New Padding(4, 5, 4, 5)
+        DataGridView1.Location = New Point(555, 364)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 62
-        DataGridView1.Size = New Size(1199, 833)
+        DataGridView1.Size = New Size(839, 500)
         DataGridView1.TabIndex = 6
         ' 
         ' Column1
@@ -159,17 +152,16 @@ Partial Class view_window
         ' 
         ' view_window
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.LightSkyBlue
-        ClientSize = New Size(2720, 1735)
+        ClientSize = New Size(1904, 1041)
         Controls.Add(DataGridView1)
         Controls.Add(viewClose_btn)
         Controls.Add(searchbutton)
         Controls.Add(TextBox1)
         Controls.Add(searchlabel)
         Controls.Add(Panel1)
-        Margin = New Padding(4, 5, 4, 5)
         Name = "view_window"
         Text = "Form5"
         Panel1.ResumeLayout(False)

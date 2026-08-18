@@ -50,20 +50,18 @@ Partial Class deletion_window
         ' 
         Panel1.BackColor = Color.Firebrick
         Panel1.Controls.Add(deleteitemlabel)
-        Panel1.Location = New Point(0, -5)
-        Panel1.Margin = New Padding(4, 5, 4, 5)
+        Panel1.Location = New Point(0, -3)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(2727, 315)
+        Panel1.Size = New Size(1909, 189)
         Panel1.TabIndex = 0
         ' 
         ' deleteitemlabel
         ' 
         deleteitemlabel.AutoSize = True
         deleteitemlabel.Font = New Font("Segoe UI Semibold", 72F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        deleteitemlabel.Location = New Point(970, 55)
-        deleteitemlabel.Margin = New Padding(4, 0, 4, 0)
+        deleteitemlabel.Location = New Point(679, 33)
         deleteitemlabel.Name = "deleteitemlabel"
-        deleteitemlabel.Size = New Size(927, 191)
+        deleteitemlabel.Size = New Size(619, 128)
         deleteitemlabel.TabIndex = 1
         deleteitemlabel.Text = "DELETE ITEM"
         ' 
@@ -71,30 +69,27 @@ Partial Class deletion_window
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(827, 387)
-        Label1.Margin = New Padding(4, 0, 4, 0)
+        Label1.Location = New Point(579, 232)
         Label1.Name = "Label1"
-        Label1.Size = New Size(305, 60)
+        Label1.Size = New Size(200, 40)
         Label1.TabIndex = 1
         Label1.Text = "Select Item ID:"
         ' 
         ' TextBox1
         ' 
         TextBox1.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox1.Location = New Point(1137, 382)
-        TextBox1.Margin = New Padding(4, 5, 4, 5)
+        TextBox1.Location = New Point(796, 229)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(771, 65)
+        TextBox1.Size = New Size(541, 46)
         TextBox1.TabIndex = 2
         ' 
         ' deletion_btn
         ' 
         deletion_btn.BackColor = Color.Firebrick
         deletion_btn.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        deletion_btn.Location = New Point(1061, 1580)
-        deletion_btn.Margin = New Padding(4, 5, 4, 5)
+        deletion_btn.Location = New Point(743, 948)
         deletion_btn.Name = "deletion_btn"
-        deletion_btn.Size = New Size(310, 92)
+        deletion_btn.Size = New Size(217, 55)
         deletion_btn.TabIndex = 3
         deletion_btn.Text = "Delete"
         deletion_btn.UseVisualStyleBackColor = False
@@ -103,10 +98,9 @@ Partial Class deletion_window
         ' 
         cancelbutton.BackColor = SystemColors.ActiveBorder
         cancelbutton.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        cancelbutton.Location = New Point(1600, 1580)
-        cancelbutton.Margin = New Padding(4, 5, 4, 5)
+        cancelbutton.Location = New Point(1120, 948)
         cancelbutton.Name = "cancelbutton"
-        cancelbutton.Size = New Size(310, 92)
+        cancelbutton.Size = New Size(217, 55)
         cancelbutton.TabIndex = 4
         cancelbutton.Text = "Cancel"
         cancelbutton.UseVisualStyleBackColor = False
@@ -126,74 +120,66 @@ Partial Class deletion_window
         Panel2.Controls.Add(descriptionlabel)
         Panel2.Controls.Add(itemnamelabel)
         Panel2.Controls.Add(iteminfolabel)
-        Panel2.Location = New Point(690, 523)
-        Panel2.Margin = New Padding(4, 5, 4, 5)
+        Panel2.Location = New Point(483, 314)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(1394, 1003)
+        Panel2.Size = New Size(976, 602)
         Panel2.TabIndex = 5
         ' 
         ' TextBox7
         ' 
         TextBox7.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox7.Location = New Point(390, 847)
-        TextBox7.Margin = New Padding(4, 5, 4, 5)
+        TextBox7.Location = New Point(273, 508)
         TextBox7.Name = "TextBox7"
-        TextBox7.Size = New Size(794, 65)
+        TextBox7.Size = New Size(557, 46)
         TextBox7.TabIndex = 12
         ' 
         ' TextBox6
         ' 
         TextBox6.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox6.Location = New Point(390, 693)
-        TextBox6.Margin = New Padding(4, 5, 4, 5)
+        TextBox6.Location = New Point(273, 416)
         TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(794, 65)
+        TextBox6.Size = New Size(557, 46)
         TextBox6.TabIndex = 11
         ' 
         ' TextBox5
         ' 
         TextBox5.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox5.Location = New Point(390, 555)
-        TextBox5.Margin = New Padding(4, 5, 4, 5)
+        TextBox5.Location = New Point(273, 333)
         TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(794, 65)
+        TextBox5.Size = New Size(557, 46)
         TextBox5.TabIndex = 10
         ' 
         ' TextBox4
         ' 
         TextBox4.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox4.Location = New Point(390, 422)
-        TextBox4.Margin = New Padding(4, 5, 4, 5)
+        TextBox4.Location = New Point(273, 253)
         TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(794, 65)
+        TextBox4.Size = New Size(557, 46)
         TextBox4.TabIndex = 9
         ' 
         ' TextBox3
         ' 
         TextBox3.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox3.Location = New Point(390, 295)
-        TextBox3.Margin = New Padding(4, 5, 4, 5)
+        TextBox3.Location = New Point(273, 177)
         TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(794, 65)
+        TextBox3.Size = New Size(557, 46)
         TextBox3.TabIndex = 8
         ' 
         ' TextBox2
         ' 
         TextBox2.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox2.Location = New Point(390, 150)
-        TextBox2.Margin = New Padding(4, 5, 4, 5)
+        TextBox2.Location = New Point(273, 90)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(794, 65)
+        TextBox2.Size = New Size(557, 46)
         TextBox2.TabIndex = 7
         ' 
         ' statuslabel
         ' 
         statuslabel.AutoSize = True
         statuslabel.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        statuslabel.Location = New Point(211, 847)
-        statuslabel.Margin = New Padding(4, 0, 4, 0)
+        statuslabel.Location = New Point(148, 508)
         statuslabel.Name = "statuslabel"
-        statuslabel.Size = New Size(153, 60)
+        statuslabel.Size = New Size(100, 40)
         statuslabel.TabIndex = 6
         statuslabel.Text = "Status:"
         ' 
@@ -201,10 +187,9 @@ Partial Class deletion_window
         ' 
         datelabel.AutoSize = True
         datelabel.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        datelabel.Location = New Point(236, 698)
-        datelabel.Margin = New Padding(4, 0, 4, 0)
+        datelabel.Location = New Point(165, 419)
         datelabel.Name = "datelabel"
-        datelabel.Size = New Size(126, 60)
+        datelabel.Size = New Size(83, 40)
         datelabel.TabIndex = 5
         datelabel.Text = "Date:"
         ' 
@@ -212,10 +197,9 @@ Partial Class deletion_window
         ' 
         locationlabel.AutoSize = True
         locationlabel.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        locationlabel.Location = New Point(156, 565)
-        locationlabel.Margin = New Padding(4, 0, 4, 0)
+        locationlabel.Location = New Point(109, 339)
         locationlabel.Name = "locationlabel"
-        locationlabel.Size = New Size(201, 60)
+        locationlabel.Size = New Size(132, 40)
         locationlabel.TabIndex = 4
         locationlabel.Text = "Location:"
         ' 
@@ -223,10 +207,9 @@ Partial Class deletion_window
         ' 
         categorylabel.AutoSize = True
         categorylabel.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        categorylabel.Location = New Point(156, 427)
-        categorylabel.Margin = New Padding(4, 0, 4, 0)
+        categorylabel.Location = New Point(109, 256)
         categorylabel.Name = "categorylabel"
-        categorylabel.Size = New Size(210, 60)
+        categorylabel.Size = New Size(139, 40)
         categorylabel.TabIndex = 3
         categorylabel.Text = "Category:"
         ' 
@@ -234,10 +217,9 @@ Partial Class deletion_window
         ' 
         descriptionlabel.AutoSize = True
         descriptionlabel.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        descriptionlabel.Location = New Point(116, 305)
-        descriptionlabel.Margin = New Padding(4, 0, 4, 0)
+        descriptionlabel.Location = New Point(81, 183)
         descriptionlabel.Name = "descriptionlabel"
-        descriptionlabel.Size = New Size(257, 60)
+        descriptionlabel.Size = New Size(167, 40)
         descriptionlabel.TabIndex = 2
         descriptionlabel.Text = "Description:"
         ' 
@@ -245,10 +227,9 @@ Partial Class deletion_window
         ' 
         itemnamelabel.AutoSize = True
         itemnamelabel.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        itemnamelabel.Location = New Point(117, 160)
-        itemnamelabel.Margin = New Padding(4, 0, 4, 0)
+        itemnamelabel.Location = New Point(82, 96)
         itemnamelabel.Name = "itemnamelabel"
-        itemnamelabel.Size = New Size(251, 60)
+        itemnamelabel.Size = New Size(166, 40)
         itemnamelabel.TabIndex = 1
         itemnamelabel.Text = "Item Name:"
         ' 
@@ -257,26 +238,24 @@ Partial Class deletion_window
         iteminfolabel.AutoSize = True
         iteminfolabel.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         iteminfolabel.ForeColor = Color.MediumBlue
-        iteminfolabel.Location = New Point(46, 25)
-        iteminfolabel.Margin = New Padding(4, 0, 4, 0)
+        iteminfolabel.Location = New Point(32, 15)
         iteminfolabel.Name = "iteminfolabel"
-        iteminfolabel.Size = New Size(328, 55)
+        iteminfolabel.Size = New Size(216, 37)
         iteminfolabel.TabIndex = 0
         iteminfolabel.Text = "Item Information"
         ' 
         ' deletion_window
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.IndianRed
-        ClientSize = New Size(2720, 1735)
+        ClientSize = New Size(1904, 1041)
         Controls.Add(Panel2)
         Controls.Add(cancelbutton)
         Controls.Add(deletion_btn)
         Controls.Add(TextBox1)
         Controls.Add(Label1)
         Controls.Add(Panel1)
-        Margin = New Padding(4, 5, 4, 5)
         Name = "deletion_window"
         Text = "Form7"
         Panel1.ResumeLayout(False)

@@ -34,10 +34,9 @@ Partial Class main_dash
         ' 
         welcomelabel.AutoSize = True
         welcomelabel.Font = New Font("Microsoft Sans Serif", 150F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        welcomelabel.Location = New Point(711, 42)
-        welcomelabel.Margin = New Padding(4, 0, 4, 0)
+        welcomelabel.Location = New Point(498, 25)
         welcomelabel.Name = "welcomelabel"
-        welcomelabel.Size = New Size(1485, 340)
+        welcomelabel.Size = New Size(992, 226)
         welcomelabel.TabIndex = 0
         welcomelabel.Text = "Welcome!"
         ' 
@@ -45,46 +44,42 @@ Partial Class main_dash
         ' 
         addItem_btn.BackColor = Color.DeepSkyBlue
         addItem_btn.Font = New Font("Segoe UI", 72F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        addItem_btn.Location = New Point(819, 500)
-        addItem_btn.Margin = New Padding(4, 5, 4, 5)
+        addItem_btn.Location = New Point(573, 300)
         addItem_btn.Name = "addItem_btn"
-        addItem_btn.Size = New Size(529, 717)
+        addItem_btn.Size = New Size(370, 430)
         addItem_btn.TabIndex = 1
-        addItem_btn.Text = "Add Lost Items"
+        addItem_btn.Text = "Read / View Items"
         addItem_btn.UseVisualStyleBackColor = False
         ' 
         ' view_btn
         ' 
         view_btn.BackColor = Color.Coral
         view_btn.Font = New Font("Segoe UI", 72F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        view_btn.Location = New Point(1389, 500)
-        view_btn.Margin = New Padding(4, 5, 4, 5)
+        view_btn.Location = New Point(972, 300)
         view_btn.Name = "view_btn"
-        view_btn.Size = New Size(529, 717)
+        view_btn.Size = New Size(370, 430)
         view_btn.TabIndex = 2
-        view_btn.Text = "View Items"
+        view_btn.Text = "Update Item"
         view_btn.UseVisualStyleBackColor = False
         ' 
         ' upd_btn
         ' 
         upd_btn.BackColor = Color.LightGreen
         upd_btn.Font = New Font("Segoe UI", 72F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        upd_btn.Location = New Point(259, 500)
-        upd_btn.Margin = New Padding(4, 5, 4, 5)
+        upd_btn.Location = New Point(181, 300)
         upd_btn.Name = "upd_btn"
-        upd_btn.Size = New Size(529, 717)
+        upd_btn.Size = New Size(370, 430)
         upd_btn.TabIndex = 3
-        upd_btn.Text = "Update Item"
+        upd_btn.Text = "Create Item"
         upd_btn.UseVisualStyleBackColor = False
         ' 
         ' del_btn
         ' 
         del_btn.BackColor = Color.Firebrick
         del_btn.Font = New Font("Segoe UI", 72F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        del_btn.Location = New Point(1953, 500)
-        del_btn.Margin = New Padding(4, 5, 4, 5)
+        del_btn.Location = New Point(1367, 300)
         del_btn.Name = "del_btn"
-        del_btn.Size = New Size(529, 717)
+        del_btn.Size = New Size(370, 430)
         del_btn.TabIndex = 4
         del_btn.Text = "Delete Item"
         del_btn.UseVisualStyleBackColor = False
@@ -93,27 +88,25 @@ Partial Class main_dash
         ' 
         logoutbutton.BackColor = SystemColors.ActiveBorder
         logoutbutton.Font = New Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        logoutbutton.Location = New Point(487, 1413)
-        logoutbutton.Margin = New Padding(4, 5, 4, 5)
+        logoutbutton.Location = New Point(341, 848)
         logoutbutton.Name = "logoutbutton"
-        logoutbutton.Size = New Size(1834, 205)
+        logoutbutton.Size = New Size(1284, 123)
         logoutbutton.TabIndex = 5
         logoutbutton.Text = "Log Out"
         logoutbutton.UseVisualStyleBackColor = False
         ' 
         ' main_dash
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.SkyBlue
-        ClientSize = New Size(2720, 1735)
+        ClientSize = New Size(1904, 1041)
         Controls.Add(logoutbutton)
         Controls.Add(del_btn)
         Controls.Add(upd_btn)
         Controls.Add(view_btn)
         Controls.Add(addItem_btn)
         Controls.Add(welcomelabel)
-        Margin = New Padding(4, 5, 4, 5)
         Name = "main_dash"
         Text = "Form3"
         ResumeLayout(False)
