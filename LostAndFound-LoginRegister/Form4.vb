@@ -7,4 +7,8 @@
         main_dash.Show() 'or show view window to show newly added item. This is unlikely unless introduced a sorting display feature.
         Me.Hide()
     End Sub
+
+    Private Sub createitemlabel_Click(sender As Object, e As EventArgs) Handles createitemlabel.Click
+
+    End Sub
 End Class

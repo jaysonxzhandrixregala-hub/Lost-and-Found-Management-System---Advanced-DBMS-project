@@ -23,9 +23,9 @@ Partial Class main_dash
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         welcomelabel = New Label()
-        addItem_btn = New Button()
-        view_btn = New Button()
-        upd_btn = New Button()
+        read_btn = New Button()
+        update_btn = New Button()
+        create_btn = New Button()
         del_btn = New Button()
         logoutbutton = New Button()
         SuspendLayout()
@@ -40,38 +40,38 @@ Partial Class main_dash
         welcomelabel.TabIndex = 0
         welcomelabel.Text = "Welcome!"
         ' 
-        ' addItem_btn
+        ' read_btn
         ' 
-        addItem_btn.BackColor = Color.DeepSkyBlue
-        addItem_btn.Font = New Font("Segoe UI", 72F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        addItem_btn.Location = New Point(573, 300)
-        addItem_btn.Name = "addItem_btn"
-        addItem_btn.Size = New Size(370, 430)
-        addItem_btn.TabIndex = 1
-        addItem_btn.Text = "Read / View Items"
-        addItem_btn.UseVisualStyleBackColor = False
+        read_btn.BackColor = Color.DeepSkyBlue
+        read_btn.Font = New Font("Segoe UI", 72F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        read_btn.Location = New Point(573, 300)
+        read_btn.Name = "read_btn"
+        read_btn.Size = New Size(370, 430)
+        read_btn.TabIndex = 1
+        read_btn.Text = "Read / View Items"
+        read_btn.UseVisualStyleBackColor = False
         ' 
-        ' view_btn
+        ' update_btn
         ' 
-        view_btn.BackColor = Color.Coral
-        view_btn.Font = New Font("Segoe UI", 72F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        view_btn.Location = New Point(972, 300)
-        view_btn.Name = "view_btn"
-        view_btn.Size = New Size(370, 430)
-        view_btn.TabIndex = 2
-        view_btn.Text = "Update Item"
-        view_btn.UseVisualStyleBackColor = False
+        update_btn.BackColor = Color.Coral
+        update_btn.Font = New Font("Segoe UI", 72F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        update_btn.Location = New Point(972, 300)
+        update_btn.Name = "update_btn"
+        update_btn.Size = New Size(370, 430)
+        update_btn.TabIndex = 2
+        update_btn.Text = "Update Item"
+        update_btn.UseVisualStyleBackColor = False
         ' 
-        ' upd_btn
+        ' create_btn
         ' 
-        upd_btn.BackColor = Color.LightGreen
-        upd_btn.Font = New Font("Segoe UI", 72F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        upd_btn.Location = New Point(181, 300)
-        upd_btn.Name = "upd_btn"
-        upd_btn.Size = New Size(370, 430)
-        upd_btn.TabIndex = 3
-        upd_btn.Text = "Create Item"
-        upd_btn.UseVisualStyleBackColor = False
+        create_btn.BackColor = Color.LightGreen
+        create_btn.Font = New Font("Segoe UI", 72F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        create_btn.Location = New Point(181, 300)
+        create_btn.Name = "create_btn"
+        create_btn.Size = New Size(370, 430)
+        create_btn.TabIndex = 3
+        create_btn.Text = "Create Item"
+        create_btn.UseVisualStyleBackColor = False
         ' 
         ' del_btn
         ' 
@@ -103,9 +103,9 @@ Partial Class main_dash
         ClientSize = New Size(1904, 1041)
         Controls.Add(logoutbutton)
         Controls.Add(del_btn)
-        Controls.Add(upd_btn)
-        Controls.Add(view_btn)
-        Controls.Add(addItem_btn)
+        Controls.Add(create_btn)
+        Controls.Add(update_btn)
+        Controls.Add(read_btn)
         Controls.Add(welcomelabel)
         Name = "main_dash"
         Text = "Form3"
@@ -114,9 +114,9 @@ Partial Class main_dash
     End Sub
 
     Friend WithEvents welcomelabel As Label
-    Friend WithEvents addItem_btn As Button
-    Friend WithEvents view_btn As Button
-    Friend WithEvents upd_btn As Button
+    Friend WithEvents read_btn As Button
+    Friend WithEvents update_btn As Button
+    Friend WithEvents create_btn As Button
     Friend WithEvents del_btn As Button
     Friend WithEvents logoutbutton As Button
 End Class

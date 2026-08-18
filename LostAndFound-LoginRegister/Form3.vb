@@ -4,18 +4,18 @@
     End Sub
 
     'window calling
-    Private Sub upd_btn_Click(sender As Object, e As EventArgs) Handles upd_btn.Click
-        update_window.Show()
+    Private Sub create_btn_Click(sender As Object, e As EventArgs) Handles create_btn.Click
+        create_window.Show()
         Me.Hide() 'we could also not?
     End Sub
 
-    Private Sub addItem_btn_Click(sender As Object, e As EventArgs) Handles addItem_btn.Click
-        create_window.Show()
+    Private Sub read_btn_Click(sender As Object, e As EventArgs) Handles read_btn.Click
+        view_window.Show()
         Me.Hide()
     End Sub
 
-    Private Sub view_btn_Click(sender As Object, e As EventArgs) Handles view_btn.Click
-        view_window.Show()
+    Private Sub update_btn_Click(sender As Object, e As EventArgs) Handles update_btn.Click
+        update_window.Show()
         Me.Hide()
     End Sub
 
@@ -24,6 +24,7 @@
         Me.Hide()
     End Sub
 
+    'logout
     Private Sub logoutbutton_Click(sender As Object, e As EventArgs) Handles logoutbutton.Click
         MessageBox.Show("You have been logged out.", "Logout", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Application.Exit()
