@@ -28,8 +28,8 @@ Partial Class loginForm
         loginbtn = New Button()
         Label2 = New Label()
         registryLink = New LinkLabel()
-        Panel1 = New Panel()
         passwordBox = New TextBox()
+        Panel1 = New Panel()
         SuspendLayout()
         ' 
         ' Label1
@@ -91,16 +91,6 @@ Partial Class loginForm
         registryLink.TabStop = True
         registryLink.Text = "Sign In"
         ' 
-        ' Panel1
-        ' 
-        Panel1.BackColor = Color.DodgerBlue
-        Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), Image)
-        Panel1.BackgroundImageLayout = ImageLayout.Stretch
-        Panel1.Location = New Point(-1, -3)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(961, 1058)
-        Panel1.TabIndex = 5
-        ' 
         ' passwordBox
         ' 
         passwordBox.BackColor = Color.SteelBlue
@@ -111,6 +101,16 @@ Partial Class loginForm
         passwordBox.Size = New Size(414, 43)
         passwordBox.TabIndex = 6
         passwordBox.Text = "Password"
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.DodgerBlue
+        Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), Image)
+        Panel1.BackgroundImageLayout = ImageLayout.Stretch
+        Panel1.Location = New Point(-1, -3)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(961, 1058)
+        Panel1.TabIndex = 5
         ' 
         ' loginForm
         ' 
@@ -137,7 +137,7 @@ Partial Class loginForm
     Friend WithEvents loginbtn As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents registryLink As LinkLabel
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents passwordBox As TextBox
+    Friend WithEvents Panel1 As Panel
 
 End Class

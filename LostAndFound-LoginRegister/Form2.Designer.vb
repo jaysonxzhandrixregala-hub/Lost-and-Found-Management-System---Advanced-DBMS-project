@@ -22,6 +22,7 @@ Partial Class registryForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(registryForm))
         registry_lbl = New Label()
         fnameBox = New TextBox()
         lnameBox = New TextBox()
@@ -168,6 +169,7 @@ Partial Class registryForm
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.SteelBlue
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1904, 1041)
         Controls.Add(Panel1)
