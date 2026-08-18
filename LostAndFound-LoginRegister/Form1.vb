@@ -68,7 +68,7 @@ Public Class loginForm
         Dim user = login.Find(filter).FirstOrDefault()
 
         If user IsNot Nothing Then
-            Form3.Show()
+            main_dash.Show()
             Me.Hide()
         Else
             MessageBox.Show("Invalid Email Or Password")
