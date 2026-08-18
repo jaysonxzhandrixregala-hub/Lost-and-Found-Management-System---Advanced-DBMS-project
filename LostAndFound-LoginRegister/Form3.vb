@@ -23,4 +23,9 @@
         deletion_window.Show()
         Me.Hide()
     End Sub
+
+    Private Sub logoutbutton_Click(sender As Object, e As EventArgs) Handles logoutbutton.Click
+        MessageBox.Show("You have been logged out.", "Logout", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Application.Exit()
+    End Sub
 End Class
