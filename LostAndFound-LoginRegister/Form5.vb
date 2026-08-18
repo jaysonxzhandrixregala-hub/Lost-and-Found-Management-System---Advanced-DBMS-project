@@ -1,9 +1,7 @@
-﻿Public Class Form5
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+﻿Public Class view_window
 
-    End Sub
-
-    Private Sub DataGridView1_CellContentClick_1(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-
+    Private Sub viewClose_btn_Click(sender As Object, e As EventArgs) Handles viewClose_btn.Click
+        main_dash.Show()
+        Me.Hide()
     End Sub
 End Class

@@ -1,9 +1,10 @@
-﻿Public Class Form4
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+﻿Public Class create_window
 
-    End Sub
+    Private Sub save_btn_Click(sender As Object, e As EventArgs) Handles save_btn.Click
 
-    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
+        'messagebox shows of action completion before below
 
+        main_dash.Show() 'or show view window to show newly added item. This is unlikely unless introduced a sorting display feature.
+        Me.Hide()
     End Sub
 End Class

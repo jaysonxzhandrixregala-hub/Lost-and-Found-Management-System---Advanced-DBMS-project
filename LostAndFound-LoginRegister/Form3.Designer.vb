@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form3
+Partial Class main_dash
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -101,7 +101,7 @@ Partial Class Form3
         logoutbutton.Text = "Log Out"
         logoutbutton.UseVisualStyleBackColor = False
         ' 
-        ' Form3
+        ' main_dash
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
@@ -114,7 +114,7 @@ Partial Class Form3
         Controls.Add(addItem_btn)
         Controls.Add(welcomelabel)
         Margin = New Padding(4, 5, 4, 5)
-        Name = "Form3"
+        Name = "main_dash"
         Text = "Form3"
         ResumeLayout(False)
         PerformLayout()
