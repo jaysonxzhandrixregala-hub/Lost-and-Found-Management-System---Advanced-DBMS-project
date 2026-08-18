@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("LostAndFound-LoginRegister"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+437870344ece5284c01c910c8ba41db71f0378c1"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e46cb3861d4b31188f29ddfef330ec2b082cfa2d"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("LostAndFound-LoginRegister"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("LostAndFound-LoginRegister"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
