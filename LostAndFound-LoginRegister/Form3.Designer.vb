@@ -23,10 +23,10 @@ Partial Class Form3
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         welcomelabel = New Label()
-        createitembutton = New Button()
-        rvitemsbutton = New Button()
-        updateitembutton = New Button()
-        deleteitembutton = New Button()
+        addItem_btn = New Button()
+        view_btn = New Button()
+        upd_btn = New Button()
+        del_btn = New Button()
         logoutbutton = New Button()
         SuspendLayout()
         ' 
@@ -34,79 +34,86 @@ Partial Class Form3
         ' 
         welcomelabel.AutoSize = True
         welcomelabel.Font = New Font("Microsoft Sans Serif", 150F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        welcomelabel.Location = New Point(498, 25)
+        welcomelabel.Location = New Point(711, 42)
+        welcomelabel.Margin = New Padding(4, 0, 4, 0)
         welcomelabel.Name = "welcomelabel"
-        welcomelabel.Size = New Size(992, 226)
+        welcomelabel.Size = New Size(1485, 340)
         welcomelabel.TabIndex = 0
         welcomelabel.Text = "Welcome!"
         ' 
-        ' createitembutton
+        ' addItem_btn
         ' 
-        createitembutton.BackColor = Color.DeepSkyBlue
-        createitembutton.Font = New Font("Segoe UI", 72F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        createitembutton.Location = New Point(573, 300)
-        createitembutton.Name = "createitembutton"
-        createitembutton.Size = New Size(370, 430)
-        createitembutton.TabIndex = 1
-        createitembutton.Text = "Create Item"
-        createitembutton.UseVisualStyleBackColor = False
+        addItem_btn.BackColor = Color.DeepSkyBlue
+        addItem_btn.Font = New Font("Segoe UI", 72F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        addItem_btn.Location = New Point(819, 500)
+        addItem_btn.Margin = New Padding(4, 5, 4, 5)
+        addItem_btn.Name = "addItem_btn"
+        addItem_btn.Size = New Size(529, 717)
+        addItem_btn.TabIndex = 1
+        addItem_btn.Text = "Add Lost Items"
+        addItem_btn.UseVisualStyleBackColor = False
         ' 
-        ' rvitemsbutton
+        ' view_btn
         ' 
-        rvitemsbutton.BackColor = Color.Coral
-        rvitemsbutton.Font = New Font("Segoe UI", 72F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        rvitemsbutton.Location = New Point(972, 300)
-        rvitemsbutton.Name = "rvitemsbutton"
-        rvitemsbutton.Size = New Size(370, 430)
-        rvitemsbutton.TabIndex = 2
-        rvitemsbutton.Text = "Read/ View Items"
-        rvitemsbutton.UseVisualStyleBackColor = False
+        view_btn.BackColor = Color.Coral
+        view_btn.Font = New Font("Segoe UI", 72F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        view_btn.Location = New Point(1389, 500)
+        view_btn.Margin = New Padding(4, 5, 4, 5)
+        view_btn.Name = "view_btn"
+        view_btn.Size = New Size(529, 717)
+        view_btn.TabIndex = 2
+        view_btn.Text = "View Items"
+        view_btn.UseVisualStyleBackColor = False
         ' 
-        ' updateitembutton
+        ' upd_btn
         ' 
-        updateitembutton.BackColor = Color.LightGreen
-        updateitembutton.Font = New Font("Segoe UI", 72F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        updateitembutton.Location = New Point(181, 300)
-        updateitembutton.Name = "updateitembutton"
-        updateitembutton.Size = New Size(370, 430)
-        updateitembutton.TabIndex = 3
-        updateitembutton.Text = "Update Item"
-        updateitembutton.UseVisualStyleBackColor = False
+        upd_btn.BackColor = Color.LightGreen
+        upd_btn.Font = New Font("Segoe UI", 72F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        upd_btn.Location = New Point(259, 500)
+        upd_btn.Margin = New Padding(4, 5, 4, 5)
+        upd_btn.Name = "upd_btn"
+        upd_btn.Size = New Size(529, 717)
+        upd_btn.TabIndex = 3
+        upd_btn.Text = "Update Item"
+        upd_btn.UseVisualStyleBackColor = False
         ' 
-        ' deleteitembutton
+        ' del_btn
         ' 
-        deleteitembutton.BackColor = Color.Firebrick
-        deleteitembutton.Font = New Font("Segoe UI", 72F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        deleteitembutton.Location = New Point(1367, 300)
-        deleteitembutton.Name = "deleteitembutton"
-        deleteitembutton.Size = New Size(370, 430)
-        deleteitembutton.TabIndex = 4
-        deleteitembutton.Text = "Delete Item"
-        deleteitembutton.UseVisualStyleBackColor = False
+        del_btn.BackColor = Color.Firebrick
+        del_btn.Font = New Font("Segoe UI", 72F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        del_btn.Location = New Point(1953, 500)
+        del_btn.Margin = New Padding(4, 5, 4, 5)
+        del_btn.Name = "del_btn"
+        del_btn.Size = New Size(529, 717)
+        del_btn.TabIndex = 4
+        del_btn.Text = "Delete Item"
+        del_btn.UseVisualStyleBackColor = False
         ' 
         ' logoutbutton
         ' 
         logoutbutton.BackColor = SystemColors.ActiveBorder
         logoutbutton.Font = New Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        logoutbutton.Location = New Point(341, 848)
+        logoutbutton.Location = New Point(487, 1413)
+        logoutbutton.Margin = New Padding(4, 5, 4, 5)
         logoutbutton.Name = "logoutbutton"
-        logoutbutton.Size = New Size(1284, 123)
+        logoutbutton.Size = New Size(1834, 205)
         logoutbutton.TabIndex = 5
         logoutbutton.Text = "Log Out"
         logoutbutton.UseVisualStyleBackColor = False
         ' 
         ' Form3
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.SkyBlue
-        ClientSize = New Size(1904, 1041)
+        ClientSize = New Size(2720, 1735)
         Controls.Add(logoutbutton)
-        Controls.Add(deleteitembutton)
-        Controls.Add(updateitembutton)
-        Controls.Add(rvitemsbutton)
-        Controls.Add(createitembutton)
+        Controls.Add(del_btn)
+        Controls.Add(upd_btn)
+        Controls.Add(view_btn)
+        Controls.Add(addItem_btn)
         Controls.Add(welcomelabel)
+        Margin = New Padding(4, 5, 4, 5)
         Name = "Form3"
         Text = "Form3"
         ResumeLayout(False)
@@ -114,9 +121,9 @@ Partial Class Form3
     End Sub
 
     Friend WithEvents welcomelabel As Label
-    Friend WithEvents createitembutton As Button
-    Friend WithEvents rvitemsbutton As Button
-    Friend WithEvents updateitembutton As Button
-    Friend WithEvents deleteitembutton As Button
+    Friend WithEvents addItem_btn As Button
+    Friend WithEvents view_btn As Button
+    Friend WithEvents upd_btn As Button
+    Friend WithEvents del_btn As Button
     Friend WithEvents logoutbutton As Button
 End Class
