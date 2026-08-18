@@ -61,17 +61,23 @@ Public Class loginForm
         Dim login = database.GetCollection(Of BsonDocument)("LoginInfo")
 
         Dim filter As New BsonDocument From {
-            {"username", usrBox.Text.Trim()},
+            {"username", usrBox.Text.Trim},
             {"password", passwordBox.Text} 'hash this shit
         }
 
-        Dim user = login.Find(filter).FirstOrDefault()
+        Dim user = login.Find(filter).FirstOrDefault
 
         If user IsNot Nothing Then
             main_dash.Show()
-            Me.Hide()
+            Hide()
         Else
             MessageBox.Show("Invalid Email Or Password")
         End If
+    End Sub
+
+    Private Sub devBtn_Click(sender As Object, e As EventArgs) Handles devBtn.Click
+        'This is temporary. Will be taken out after production.
+        main_dash.Show()
+        Me.Hide()
     End Sub
 End Class
