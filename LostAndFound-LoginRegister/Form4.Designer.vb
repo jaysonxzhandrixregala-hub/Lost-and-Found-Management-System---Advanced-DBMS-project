@@ -45,10 +45,9 @@ Partial Class create_window
         ' 
         createitemlabel.AutoSize = True
         createitemlabel.Font = New Font("Segoe UI Semibold", 72F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        createitemlabel.Location = New Point(974, 108)
-        createitemlabel.Margin = New Padding(4, 0, 4, 0)
+        createitemlabel.Location = New Point(682, 65)
         createitemlabel.Name = "createitemlabel"
-        createitemlabel.Size = New Size(945, 191)
+        createitemlabel.Size = New Size(631, 128)
         createitemlabel.TabIndex = 0
         createitemlabel.Text = "CREATE ITEM"
         ' 
@@ -56,60 +55,54 @@ Partial Class create_window
         ' 
         Panel1.BackColor = Color.LightGreen
         Panel1.Controls.Add(createitemlabel)
-        Panel1.Location = New Point(-13, -62)
-        Panel1.Margin = New Padding(4, 5, 4, 5)
+        Panel1.Location = New Point(-9, -37)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(2743, 368)
+        Panel1.Size = New Size(1920, 221)
         Panel1.TabIndex = 1
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(813, 418)
-        Label1.Margin = New Padding(4, 0, 4, 0)
+        Label1.Location = New Point(569, 251)
         Label1.Name = "Label1"
-        Label1.Size = New Size(251, 60)
+        Label1.Size = New Size(166, 40)
         Label1.TabIndex = 2
         Label1.Text = "Item Name:"
         ' 
         ' itemName_Box
         ' 
         itemName_Box.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        itemName_Box.Location = New Point(1107, 413)
-        itemName_Box.Margin = New Padding(4, 5, 4, 5)
+        itemName_Box.Location = New Point(775, 248)
         itemName_Box.Name = "itemName_Box"
-        itemName_Box.Size = New Size(937, 65)
+        itemName_Box.Size = New Size(657, 46)
         itemName_Box.TabIndex = 3
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(811, 588)
-        Label2.Margin = New Padding(4, 0, 4, 0)
+        Label2.Location = New Point(568, 353)
         Label2.Name = "Label2"
-        Label2.Size = New Size(257, 60)
+        Label2.Size = New Size(167, 40)
         Label2.TabIndex = 4
         Label2.Text = "Description:"
         ' 
         ' descBox
         ' 
         descBox.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        descBox.Location = New Point(1107, 588)
-        descBox.Margin = New Padding(4, 5, 4, 5)
+        descBox.Location = New Point(775, 353)
         descBox.Name = "descBox"
-        descBox.Size = New Size(937, 65)
+        descBox.Size = New Size(657, 46)
         descBox.TabIndex = 5
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(851, 760)
-        Label3.Margin = New Padding(4, 0, 4, 0)
+        Label3.Location = New Point(596, 456)
         Label3.Name = "Label3"
-        Label3.Size = New Size(210, 60)
+        Label3.Size = New Size(139, 40)
         Label3.TabIndex = 6
         Label3.Text = "Category:"
         ' 
@@ -117,30 +110,27 @@ Partial Class create_window
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(644, 942)
-        Label4.Margin = New Padding(4, 0, 4, 0)
+        Label4.Location = New Point(451, 565)
         Label4.Name = "Label4"
-        Label4.Size = New Size(434, 60)
+        Label4.Size = New Size(284, 40)
         Label4.TabIndex = 8
         Label4.Text = "Location Found/Lost:"
         ' 
         ' locationBox
         ' 
         locationBox.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        locationBox.Location = New Point(1107, 942)
-        locationBox.Margin = New Padding(4, 5, 4, 5)
+        locationBox.Location = New Point(775, 565)
         locationBox.Name = "locationBox"
-        locationBox.Size = New Size(937, 61)
+        locationBox.Size = New Size(657, 43)
         locationBox.TabIndex = 9
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(931, 1122)
-        Label5.Margin = New Padding(4, 0, 4, 0)
+        Label5.Location = New Point(652, 673)
         Label5.Name = "Label5"
-        Label5.Size = New Size(126, 60)
+        Label5.Size = New Size(83, 40)
         Label5.TabIndex = 10
         Label5.Text = "Date:"
         ' 
@@ -148,10 +138,9 @@ Partial Class create_window
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(907, 1323)
-        Label6.Margin = New Padding(4, 0, 4, 0)
+        Label6.Location = New Point(635, 794)
         Label6.Name = "Label6"
-        Label6.Size = New Size(153, 60)
+        Label6.Size = New Size(100, 40)
         Label6.TabIndex = 12
         Label6.Text = "Status:"
         ' 
@@ -159,10 +148,9 @@ Partial Class create_window
         ' 
         save_btn.BackColor = Color.PaleGreen
         save_btn.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        save_btn.Location = New Point(1140, 1527)
-        save_btn.Margin = New Padding(4, 5, 4, 5)
+        save_btn.Location = New Point(798, 916)
         save_btn.Name = "save_btn"
-        save_btn.Size = New Size(334, 93)
+        save_btn.Size = New Size(234, 56)
         save_btn.TabIndex = 14
         save_btn.Text = "Save"
         save_btn.UseVisualStyleBackColor = False
@@ -171,10 +159,9 @@ Partial Class create_window
         ' 
         clearbutton.BackColor = SystemColors.ActiveBorder
         clearbutton.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        clearbutton.Location = New Point(1593, 1527)
-        clearbutton.Margin = New Padding(4, 5, 4, 5)
+        clearbutton.Location = New Point(1115, 916)
         clearbutton.Name = "clearbutton"
-        clearbutton.Size = New Size(334, 93)
+        clearbutton.Size = New Size(234, 56)
         clearbutton.TabIndex = 15
         clearbutton.Text = "Clear"
         clearbutton.UseVisualStyleBackColor = False
@@ -184,9 +171,10 @@ Partial Class create_window
         cmbCategory.Font = New Font("Segoe UI", 21.75F)
         cmbCategory.FormattingEnabled = True
         cmbCategory.Items.AddRange(New Object() {"Valuable", "Non-Valuable", "Perishable"})
-        cmbCategory.Location = New Point(1107, 757)
+        cmbCategory.Location = New Point(775, 454)
+        cmbCategory.Margin = New Padding(2)
         cmbCategory.Name = "cmbCategory"
-        cmbCategory.Size = New Size(937, 68)
+        cmbCategory.Size = New Size(657, 48)
         cmbCategory.TabIndex = 16
         ' 
         ' cmbStatus
@@ -194,26 +182,28 @@ Partial Class create_window
         cmbStatus.Font = New Font("Segoe UI", 21.75F)
         cmbStatus.FormattingEnabled = True
         cmbStatus.Items.AddRange(New Object() {"Lost", "Found", "Unclaimed"})
-        cmbStatus.Location = New Point(1107, 1323)
+        cmbStatus.Location = New Point(775, 794)
+        cmbStatus.Margin = New Padding(2)
         cmbStatus.Name = "cmbStatus"
-        cmbStatus.Size = New Size(937, 68)
+        cmbStatus.Size = New Size(657, 48)
         cmbStatus.TabIndex = 17
         ' 
         ' datePicker
         ' 
         datePicker.Font = New Font("Segoe UI", 21.75F)
-        datePicker.Location = New Point(1107, 1117)
+        datePicker.Location = New Point(775, 670)
+        datePicker.Margin = New Padding(2)
         datePicker.Name = "datePicker"
-        datePicker.Size = New Size(937, 65)
+        datePicker.Size = New Size(657, 46)
         datePicker.TabIndex = 18
         datePicker.Value = New Date(2026, 8, 19, 15, 32, 18, 0)
         ' 
         ' create_window
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DarkSeaGreen
-        ClientSize = New Size(2720, 1735)
+        ClientSize = New Size(1347, 637)
         Controls.Add(datePicker)
         Controls.Add(cmbStatus)
         Controls.Add(cmbCategory)
@@ -229,7 +219,6 @@ Partial Class create_window
         Controls.Add(itemName_Box)
         Controls.Add(Label1)
         Controls.Add(Panel1)
-        Margin = New Padding(4, 5, 4, 5)
         Name = "create_window"
         Text = "Form4"
         Panel1.ResumeLayout(False)
