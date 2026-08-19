@@ -56,7 +56,6 @@ C:\project\Lost-and-Found-Management-System---Advanced-DBMS-project\LostAndFound
 C:\project\Lost-and-Found-Management-System---Advanced-DBMS-project\LostAndFound-LoginRegister\obj\Debug\net10.0-windows\LostAndFound_LoginRegister.view_window.resources
 C:\project\Lost-and-Found-Management-System---Advanced-DBMS-project\LostAndFound-LoginRegister\obj\Debug\net10.0-windows\LostAndFound_LoginRegister.update_window.resources
 C:\project\Lost-and-Found-Management-System---Advanced-DBMS-project\LostAndFound-LoginRegister\obj\Debug\net10.0-windows\LostAndFound_LoginRegister.deletion_window.resources
-C:\project\Lost-and-Found-Management-System---Advanced-DBMS-project\LostAndFound-LoginRegister\obj\Debug\net10.0-windows\LostAndFound_LoginRegister.lostfoundDashbord.resources
 C:\project\Lost-and-Found-Management-System---Advanced-DBMS-project\LostAndFound-LoginRegister\obj\Debug\net10.0-windows\LostAndFound_LoginRegister.Resources.resources
 C:\project\Lost-and-Found-Management-System---Advanced-DBMS-project\LostAndFound-LoginRegister\obj\Debug\net10.0-windows\LostAndFound-LoginRegister.vbproj.GenerateResource.cache
 C:\project\Lost-and-Found-Management-System---Advanced-DBMS-project\LostAndFound-LoginRegister\obj\Debug\net10.0-windows\LostAndFound-LoginRegister.GeneratedMSBuildEditorConfig.editorconfig
@@ -70,7 +69,6 @@ C:\project\Lost-and-Found-Management-System---Advanced-DBMS-project\LostAndFound
 C:\project\Lost-and-Found-Management-System---Advanced-DBMS-project\LostAndFound-LoginRegister\obj\Debug\net10.0-windows\LostAndFound-LoginRegister.pdb
 C:\project\Lost-and-Found-Management-System---Advanced-DBMS-project\LostAndFound-LoginRegister\obj\Debug\net10.0-windows\LostAndFound-LoginRegister.genruntimeconfig.cache
 C:\project\Lost-and-Found-Management-System---Advanced-DBMS-project\LostAndFound-LoginRegister\obj\Debug\net10.0-windows\ref\LostAndFound-LoginRegister.dll
-C:\project\Lost-and-Found-Management-System---Advanced-DBMS-project\LostAndFound-LoginRegister\bin\Debug\net10.0-windows\.env
 C:\dev\Lost-and-Found-Management-System---Advanced-DBMS-project-master\LostAndFound-LoginRegister\bin\Debug\net10.0-windows\.env
 C:\dev\Lost-and-Found-Management-System---Advanced-DBMS-project-master\LostAndFound-LoginRegister\bin\Debug\net10.0-windows\LostAndFound-LoginRegister.exe
 C:\dev\Lost-and-Found-Management-System---Advanced-DBMS-project-master\LostAndFound-LoginRegister\bin\Debug\net10.0-windows\LostAndFound-LoginRegister.deps.json
@@ -110,3 +108,4 @@ C:\dev\Lost-and-Found-Management-System---Advanced-DBMS-project-master\LostAndFo
 C:\dev\Lost-and-Found-Management-System---Advanced-DBMS-project-master\LostAndFound-LoginRegister\obj\Debug\net10.0-windows\LostAndFound-LoginRegister.pdb
 C:\dev\Lost-and-Found-Management-System---Advanced-DBMS-project-master\LostAndFound-LoginRegister\obj\Debug\net10.0-windows\LostAndFound-LoginRegister.genruntimeconfig.cache
 C:\dev\Lost-and-Found-Management-System---Advanced-DBMS-project-master\LostAndFound-LoginRegister\obj\Debug\net10.0-windows\ref\LostAndFound-LoginRegister.dll
+C:\project\Lost-and-Found-Management-System---Advanced-DBMS-project\LostAndFound-LoginRegister\bin\Debug\net10.0-windows\.env
