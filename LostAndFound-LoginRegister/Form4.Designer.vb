@@ -29,15 +29,15 @@ Partial Class create_window
         Label2 = New Label()
         descBox = New TextBox()
         Label3 = New Label()
-        TextBox3 = New TextBox()
         Label4 = New Label()
-        TextBox4 = New TextBox()
+        locationBox = New TextBox()
         Label5 = New Label()
-        TextBox5 = New TextBox()
         Label6 = New Label()
-        TextBox6 = New TextBox()
         save_btn = New Button()
         clearbutton = New Button()
+        cmbCategory = New ComboBox()
+        cmbStatus = New ComboBox()
+        datePicker = New DateTimePicker()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -113,15 +113,6 @@ Partial Class create_window
         Label3.TabIndex = 6
         Label3.Text = "Category:"
         ' 
-        ' TextBox3
-        ' 
-        TextBox3.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox3.Location = New Point(1107, 760)
-        TextBox3.Margin = New Padding(4, 5, 4, 5)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(937, 65)
-        TextBox3.TabIndex = 7
-        ' 
         ' Label4
         ' 
         Label4.AutoSize = True
@@ -133,14 +124,14 @@ Partial Class create_window
         Label4.TabIndex = 8
         Label4.Text = "Location Found/Lost:"
         ' 
-        ' TextBox4
+        ' locationBox
         ' 
-        TextBox4.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox4.Location = New Point(1107, 942)
-        TextBox4.Margin = New Padding(4, 5, 4, 5)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(937, 61)
-        TextBox4.TabIndex = 9
+        locationBox.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        locationBox.Location = New Point(1107, 942)
+        locationBox.Margin = New Padding(4, 5, 4, 5)
+        locationBox.Name = "locationBox"
+        locationBox.Size = New Size(937, 61)
+        locationBox.TabIndex = 9
         ' 
         ' Label5
         ' 
@@ -153,15 +144,6 @@ Partial Class create_window
         Label5.TabIndex = 10
         Label5.Text = "Date:"
         ' 
-        ' TextBox5
-        ' 
-        TextBox5.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox5.Location = New Point(1107, 1122)
-        TextBox5.Margin = New Padding(4, 5, 4, 5)
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(937, 65)
-        TextBox5.TabIndex = 11
-        ' 
         ' Label6
         ' 
         Label6.AutoSize = True
@@ -172,15 +154,6 @@ Partial Class create_window
         Label6.Size = New Size(153, 60)
         Label6.TabIndex = 12
         Label6.Text = "Status:"
-        ' 
-        ' TextBox6
-        ' 
-        TextBox6.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox6.Location = New Point(1107, 1318)
-        TextBox6.Margin = New Padding(4, 5, 4, 5)
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(937, 65)
-        TextBox6.TabIndex = 13
         ' 
         ' save_btn
         ' 
@@ -206,21 +179,50 @@ Partial Class create_window
         clearbutton.Text = "Clear"
         clearbutton.UseVisualStyleBackColor = False
         ' 
+        ' cmbCategory
+        ' 
+        cmbCategory.Font = New Font("Segoe UI", 21.75F)
+        cmbCategory.FormattingEnabled = True
+        cmbCategory.Items.AddRange(New Object() {"Valuable", "Non-Valuable", "Perishable"})
+        cmbCategory.Location = New Point(1107, 757)
+        cmbCategory.Name = "cmbCategory"
+        cmbCategory.Size = New Size(937, 68)
+        cmbCategory.TabIndex = 16
+        ' 
+        ' cmbStatus
+        ' 
+        cmbStatus.Font = New Font("Segoe UI", 21.75F)
+        cmbStatus.FormattingEnabled = True
+        cmbStatus.Items.AddRange(New Object() {"Lost", "Found", "Unclaimed"})
+        cmbStatus.Location = New Point(1107, 1323)
+        cmbStatus.Name = "cmbStatus"
+        cmbStatus.Size = New Size(937, 68)
+        cmbStatus.TabIndex = 17
+        ' 
+        ' datePicker
+        ' 
+        datePicker.Font = New Font("Segoe UI", 21.75F)
+        datePicker.Location = New Point(1107, 1117)
+        datePicker.Name = "datePicker"
+        datePicker.Size = New Size(937, 65)
+        datePicker.TabIndex = 18
+        datePicker.Value = New Date(2026, 8, 19, 15, 32, 18, 0)
+        ' 
         ' create_window
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DarkSeaGreen
         ClientSize = New Size(2720, 1735)
+        Controls.Add(datePicker)
+        Controls.Add(cmbStatus)
+        Controls.Add(cmbCategory)
         Controls.Add(clearbutton)
         Controls.Add(save_btn)
-        Controls.Add(TextBox6)
         Controls.Add(Label6)
-        Controls.Add(TextBox5)
         Controls.Add(Label5)
-        Controls.Add(TextBox4)
+        Controls.Add(locationBox)
         Controls.Add(Label4)
-        Controls.Add(TextBox3)
         Controls.Add(Label3)
         Controls.Add(descBox)
         Controls.Add(Label2)
@@ -245,11 +247,12 @@ Partial Class create_window
     Friend WithEvents Label3 As Label
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents locationBox As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox6 As TextBox
     Friend WithEvents save_btn As Button
     Friend WithEvents clearbutton As Button
+    Friend WithEvents cmbCategory As ComboBox
+    Friend WithEvents cmbStatus As ComboBox
+    Friend WithEvents datePicker As DateTimePicker
 End Class

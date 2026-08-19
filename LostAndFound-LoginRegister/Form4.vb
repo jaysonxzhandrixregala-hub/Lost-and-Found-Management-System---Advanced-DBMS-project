@@ -7,6 +7,21 @@ Public Class create_window
     Private client As MongoClient
     Private database As IMongoDatabase
 
+    'prevents duplication of unique id
+    Private Function GetNextSequence(db As IMongoDatabase, sequenceName As String) As Long
+        Dim counters = db.GetCollection(Of BsonDocument)("counters")
+        Dim filter = Builders(Of BsonDocument).Filter.Eq(Of String)("_id", sequenceName)
+        Dim update = Builders(Of BsonDocument).Update.Inc(Of Long)("seq", 1)
+
+        Dim options = New FindOneAndUpdateOptions(Of BsonDocument) With {
+        .ReturnDocument = ReturnDocument.After,
+        .IsUpsert = True
+    }
+
+        Dim result = counters.FindOneAndUpdate(filter, update, options)
+        Return result("seq").AsInt64
+    End Function
+
     Private Sub create_window_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Env.Load()
@@ -18,25 +33,72 @@ Public Class create_window
 
     Private Sub save_btn_Click(sender As Object, e As EventArgs) Handles save_btn.Click
 
-        'messagebox shows of action completion before below
+        'basic input validation, checks if the fields are empty
+        If String.IsNullOrWhiteSpace(itemName_Box.Text) OrElse
+            String.IsNullOrWhiteSpace(descBox.Text) OrElse
+            String.IsNullOrWhiteSpace(locationBox.Text) OrElse
+            cmbCategory.SelectedIndex = -1 OrElse
+            cmbStatus.SelectedIndex = -1 Then
 
-        main_dash.Show() 'or show view window to show newly added item. This is unlikely unless introduced a sorting display feature.
-        Me.Hide()
+            MessageBox.Show("Please fill in all required fields.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
+        'prompt user confirmation
+        Dim confirm_data As DialogResult = MessageBox.Show(
+            "Are you sure all details are correct?",
+            "Confirmation Registration",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question
+        )
+
+        If confirm_data <> DialogResult.Yes Then Exit Sub
+
+        Try
+            Dim create = database.GetCollection(Of BsonDocument)("createInfo")
+
+            Dim nextNum As Long = GetNextSequence(database, "createInfo_id")
+            Dim lnfId As String = $"lnf_{nextNum:D4}" 'formats with leading zeros 'lnf_0001'
+
+            Dim category As String = cmbCategory.Text
+            Dim status As String = cmbStatus.Text
+            Dim item_date As String = datePicker.Value.Date
+
+            Dim itemInfo As New BsonDocument From {
+                {"_id", lnfId},
+                {"item name", itemName_Box.Text},
+                {"description", descBox.Text},
+                {"category", category},
+                {"location_found/lost", locationBox.Text},
+                {"date", item_date},
+                {"status", status}
+            }
+
+            create.InsertOne(itemInfo)
+            MessageBox.Show($"Added item ""{itemName_Box.Text}"" to database as '{status}'." & Environment.NewLine & "Click OK to go back to dashboard.", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            'clears the fields for next action
+            itemName_Box.Text = Nothing
+            descBox.Text = Nothing
+            cmbCategory.Text = Nothing
+            locationBox.Text = Nothing
+            cmbStatus.Text = Nothing
+
+            main_dash.Show()
+            Me.Hide()
+
+
+        Catch ex As Exception
+            MessageBox.Show("Database Error: " & ex.Message, "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End Try
     End Sub
 
-    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
-        'must be a combobox
-    End Sub
-
-    Private Sub TextBox5_TextChanged(sender As Object, e As EventArgs) Handles TextBox5.TextChanged
-        'We could have three comboboxes lined up horizontally for month, day, and year.
-        'Or a calender thing?
-        'Come on, we can do better than a textbox.
-    End Sub
-
-    Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs) Handles TextBox6.TextChanged
-        'combobox. Either 3 or 2 items of Lost, Found, and Idle.
-        'Idle just means the item has been found, but no owner came to get it back.
-        'But idk if I will add this. Feels like an optional thing but at the same time not.
+    'clears the fields
+    Private Sub clearbutton_Click(sender As Object, e As EventArgs) Handles clearbutton.Click
+        itemName_Box.Text = Nothing
+        descBox.Text = Nothing
+        cmbCategory.Text = Nothing
+        locationBox.Text = Nothing
+        cmbStatus.Text = Nothing
     End Sub
 End Class
