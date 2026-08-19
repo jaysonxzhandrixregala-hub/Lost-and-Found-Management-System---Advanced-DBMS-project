@@ -13,6 +13,20 @@ Public Class registryForm
     Private emailClick As Boolean = True
     Private passwordClick As Boolean = True
 
+    'prevents duplication of unique id
+    Private Function GetNextSequence(db As IMongoDatabase, sequenceName As String) As Long
+        Dim counters = db.GetCollection(Of BsonDocument)("counters")
+        Dim filter = Builders(Of BsonDocument).Filter.Eq(Of String)("_id", sequenceName)
+        Dim update = Builders(Of BsonDocument).Update.Inc(Of Long)("seq", 1)
+
+        Dim options = New FindOneAndUpdateOptions(Of BsonDocument) With {
+        .ReturnDocument = ReturnDocument.After,
+        .IsUpsert = True
+    }
+
+        Dim result = counters.FindOneAndUpdate(filter, update, options)
+        Return result("seq").AsInt64
+    End Function
 
     Private Sub registryForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
@@ -66,12 +80,16 @@ Public Class registryForm
             Dim register = database.GetCollection(Of BsonDocument)("RegistrationInfo")
             Dim login = database.GetCollection(Of BsonDocument)("LoginInfo")
 
+            Dim nextNum As Long = GetNextSequence(database, "userId")
+            Dim usrId As String = $"USR-{nextNum:D2}"
+
             Dim user_reg As New BsonDocument From {
                 {"fname", fnameBox.Text.Trim()}, '.Trim() removes whitespaces in text.
                 {"mname", lnameBox.Text.Trim()}
             }
 
             Dim user_log As New BsonDocument From {
+                {"_id", usrId},
                 {"username", usernameBox.Text},
                 {"email", emailBox.Text},
                 {"password", passwordBox.Text} 'Must hash
