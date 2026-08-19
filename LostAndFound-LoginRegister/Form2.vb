@@ -74,7 +74,7 @@ Public Class registryForm
             Dim user_log As New BsonDocument From {
                 {"username", usernameBox.Text},
                 {"email", emailBox.Text},
-                {"password", passwordBox.Text} 'I'll hash this tomorrow
+                {"password", passwordBox.Text} 'Must hash
             }
 
             register.InsertOne(user_reg)
