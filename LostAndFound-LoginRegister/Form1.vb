@@ -45,14 +45,14 @@ Public Class loginForm
             Exit Sub
         End If
 
-        Dim login = database.GetCollection(Of BsonDocument)("LoginInfo")
+        Dim usersColl = database.GetCollection(Of BsonDocument)("users")
 
         Dim filter As New BsonDocument From {
-            {"username", usrBox.Text.Trim},
-            {"password", passwordBox.Text} 'hash this shit
+            {"auth.username", usrBox.Text},
+            {"auth.password", passwordBox.Text}
         }
 
-        Dim user = login.Find(filter).FirstOrDefault
+        Dim user = usersColl.Find(filter).FirstOrDefault
 
         If user IsNot Nothing Then
             main_dash.Show()
