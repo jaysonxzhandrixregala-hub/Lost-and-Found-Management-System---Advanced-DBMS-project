@@ -55,6 +55,7 @@ Public Class loginForm
         Dim user = usersColl.Find(filter).FirstOrDefault
 
         If user IsNot Nothing Then
+            UserSession.CurrentUserId = user("_id").AsString
             main_dash.Show()
             Hide()
         Else
@@ -69,6 +70,8 @@ Public Class loginForm
 
     Private Sub devBtn_Click(sender As Object, e As EventArgs) Handles devBtn.Click
         'This is temporary. Will be taken out after production.
+        UserSession.CurrentUserId = "USR01"
+
         main_dash.Show()
         Me.Hide()
     End Sub
