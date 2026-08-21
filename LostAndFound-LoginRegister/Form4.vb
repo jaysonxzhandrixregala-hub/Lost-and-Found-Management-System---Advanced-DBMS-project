@@ -9,7 +9,7 @@ Public Class create_window
 
     'prevents duplication of unique id
     Private Function GetNextSequence(db As IMongoDatabase, sequenceName As String) As Long
-        Dim counters = db.GetCollection(Of BsonDocument)("counters")
+        Dim counters = db.GetCollection(Of BsonDocument)("crId_counters")
         Dim filter = Builders(Of BsonDocument).Filter.Eq(Of String)("_id", sequenceName)
         Dim update = Builders(Of BsonDocument).Update.Inc(Of Long)("seq", 1)
 

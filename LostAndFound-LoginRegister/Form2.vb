@@ -15,7 +15,7 @@ Public Class registryForm
 
     'prevents duplication of unique id
     Private Function GetNextSequence(db As IMongoDatabase, sequenceName As String) As Long
-        Dim counters = db.GetCollection(Of BsonDocument)("counters")
+        Dim counters = db.GetCollection(Of BsonDocument)("userId_counters")
         Dim filter = Builders(Of BsonDocument).Filter.Eq(Of String)("_id", sequenceName)
         Dim update = Builders(Of BsonDocument).Update.Inc(Of Long)("seq", 1)
 
@@ -77,31 +77,29 @@ Public Class registryForm
 
         Try
 
-            Dim register = database.GetCollection(Of BsonDocument)("RegistrationInfo")
-            Dim login = database.GetCollection(Of BsonDocument)("LoginInfo")
+            Dim usersColl = database.GetCollection(Of BsonDocument)("users")
 
             Dim nextNum As Long = GetNextSequence(database, "userId")
-            Dim usrId As String = $"USR-{nextNum:D2}"
+            Dim usrId As String = $"USR{nextNum:D2}"
 
-            Dim user_reg As New BsonDocument From {
-                {"fname", fnameBox.Text.Trim()}, '.Trim() removes whitespaces in text.
-                {"mname", lnameBox.Text.Trim()}
-            }
-
-            Dim user_log As New BsonDocument From {
+            Dim user As New BsonDocument From {
                 {"_id", usrId},
+                {"auth", New BsonDocument From {
                 {"username", usernameBox.Text},
                 {"email", emailBox.Text},
-                {"password", passwordBox.Text} 'Must hash
+                {"password", passwordBox.Text}
+            }},
+                {"profile", New BsonDocument From {
+                {"firstName", fnameBox.Text},
+                {"lastName", lnameBox.Text}
+            }},
+                {"createdAt", DateTime.Now.ToString("MM/dd/yyyy hh:mm tt")}
             }
 
-            register.InsertOne(user_reg)
-            login.InsertOne(user_log)
-
+            usersColl.InsertOne(user)
 
             loginForm.Show()
             Me.Hide()
-
 
         Catch ex As Exception
             MessageBox.Show("Database Error: " & ex.Message, "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Information)
