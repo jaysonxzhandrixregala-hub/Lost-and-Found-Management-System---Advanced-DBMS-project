@@ -55,6 +55,11 @@ Public Class create_window
         If confirm_data <> DialogResult.Yes Then Exit Sub
 
         Try
+            If String.IsNullOrEmpty(UserSession.CurrentUserId) Then
+                MessageBox.Show("usrId is null or empty. Assign a value before inserting.")
+                Exit Sub
+            End If
+
             Dim create = database.GetCollection(Of BsonDocument)("createInfo")
 
             Dim nextNum As Long = GetNextSequence(database, "createInfo_id")
@@ -66,6 +71,7 @@ Public Class create_window
 
             Dim itemInfo As New BsonDocument From {
                 {"_id", lnfId},
+                {"userId", UserSession.CurrentUserId},
                 {"item name", itemName_Box.Text},
                 {"description", descBox.Text},
                 {"category", category},

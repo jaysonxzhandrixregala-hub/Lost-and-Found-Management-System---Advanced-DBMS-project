@@ -80,10 +80,10 @@ Public Class registryForm
             Dim usersColl = database.GetCollection(Of BsonDocument)("users")
 
             Dim nextNum As Long = GetNextSequence(database, "userId")
-            Dim usrId As String = $"USR{nextNum:D2}"
+            UserSession.CurrentUserId = $"USR{nextNum:D2}"
 
             Dim user As New BsonDocument From {
-                {"_id", usrId},
+                {"_id", UserSession.CurrentUserId},
                 {"auth", New BsonDocument From {
                 {"username", usernameBox.Text},
                 {"email", emailBox.Text},
