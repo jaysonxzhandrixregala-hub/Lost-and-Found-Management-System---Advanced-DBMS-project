@@ -22,7 +22,6 @@ Partial Class loginForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(loginForm))
         Label1 = New Label()
         usrBox = New TextBox()
         loginbtn = New Button()
@@ -31,6 +30,7 @@ Partial Class loginForm
         passwordBox = New TextBox()
         Panel1 = New Panel()
         devBtn = New Button()
+        chkShowPw = New CheckBox()
         SuspendLayout()
         ' 
         ' Label1
@@ -75,7 +75,7 @@ Partial Class loginForm
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(1729, 1070)
+        Label2.Location = New Point(1766, 1062)
         Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
         Label2.Size = New Size(350, 45)
@@ -88,7 +88,7 @@ Partial Class loginForm
         registryLink.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         registryLink.ForeColor = Color.FromArgb(CByte(59), CByte(54), CByte(75))
         registryLink.LinkColor = Color.DodgerBlue
-        registryLink.Location = New Point(2053, 1070)
+        registryLink.Location = New Point(2110, 1062)
         registryLink.Margin = New Padding(4, 0, 4, 0)
         registryLink.Name = "registryLink"
         registryLink.Size = New Size(118, 45)
@@ -104,14 +104,13 @@ Partial Class loginForm
         passwordBox.Location = New Point(1711, 733)
         passwordBox.Margin = New Padding(4, 5, 4, 5)
         passwordBox.Name = "passwordBox"
-        passwordBox.PasswordChar = "*"c
+        passwordBox.PasswordChar = "•"c
         passwordBox.Size = New Size(590, 61)
         passwordBox.TabIndex = 6
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = Color.DodgerBlue
-        Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), Image)
         Panel1.BackgroundImageLayout = ImageLayout.Stretch
         Panel1.Location = New Point(-1, -5)
         Panel1.Margin = New Padding(4, 5, 4, 5)
@@ -130,6 +129,17 @@ Partial Class loginForm
         devBtn.Text = "dev"
         devBtn.UseVisualStyleBackColor = True
         ' 
+        ' chkShowPw
+        ' 
+        chkShowPw.AutoSize = True
+        chkShowPw.FlatStyle = FlatStyle.Popup
+        chkShowPw.Font = New Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        chkShowPw.Location = New Point(2267, 747)
+        chkShowPw.Name = "chkShowPw"
+        chkShowPw.Size = New Size(18, 17)
+        chkShowPw.TabIndex = 8
+        chkShowPw.UseVisualStyleBackColor = True
+        ' 
         ' loginForm
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
@@ -137,6 +147,7 @@ Partial Class loginForm
         BackColor = Color.FromArgb(CByte(0), CByte(74), CByte(150))
         CausesValidation = False
         ClientSize = New Size(2587, 1502)
+        Controls.Add(chkShowPw)
         Controls.Add(devBtn)
         Controls.Add(passwordBox)
         Controls.Add(Panel1)
@@ -160,5 +171,6 @@ Partial Class loginForm
     Friend WithEvents passwordBox As TextBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents devBtn As Button
+    Friend WithEvents chkShowPw As CheckBox
 
 End Class

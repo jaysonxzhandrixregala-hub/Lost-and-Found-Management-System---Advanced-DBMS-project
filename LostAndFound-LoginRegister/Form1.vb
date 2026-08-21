@@ -73,5 +73,12 @@ Public Class loginForm
         Me.Hide()
     End Sub
 
-
+    Private Sub chkShowPw_CheckedChanged(sender As Object, e As EventArgs) Handles chkShowPw.CheckedChanged
+        If chkShowPw.Checked Then
+            'remove masking to show plain text
+            passwordBox.PasswordChar = ControlChars.NullChar
+        Else
+            passwordBox.PasswordChar = "•"c
+        End If
+    End Sub
 End Class
