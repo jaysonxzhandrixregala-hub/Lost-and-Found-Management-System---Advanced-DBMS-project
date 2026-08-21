@@ -1,34 +1,18 @@
 ﻿Imports MongoDB.Driver
 Imports MongoDB.Bson
 Imports DotNetEnv
+Imports System.Runtime.InteropServices
 
 Public Class loginForm
 
     Private client As MongoClient
     Private database As IMongoDatabase
 
-    Dim usr_oneClick As Boolean = True
-    Dim pwd_oneClick As Boolean = True
+    Private Const EM_SETCUEBANNER As Integer = &H1501
 
-    Private Sub registry_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles registryLink.LinkClicked
-        registryForm.Show()
-        Me.Hide()
-    End Sub
-
-    Private Sub usrBox_Click(sender As Object, e As EventArgs) Handles usrBox.Click
-        If usr_oneClick = True Then
-            usrBox.Text = Nothing
-            usr_oneClick = False
-        End If
-    End Sub
-
-    Private Sub passwordBox_Click(sender As Object, e As EventArgs) Handles passwordBox.Click
-        If pwd_oneClick = True Then
-            passwordBox.ForeColor = Color.Black
-            passwordBox.Text = Nothing
-            pwd_oneClick = False
-        End If
-    End Sub
+    <DllImport("user32.dll", CharSet:=CharSet.Unicode)>
+    Private Shared Function SendMessage(hWnd As IntPtr, msg As Integer, wParam As IntPtr, lParam As String) As IntPtr
+    End Function
 
     Private Sub loginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
@@ -38,6 +22,9 @@ Public Class loginForm
 
         client = New MongoClient(mongoUri)
         database = client.GetDatabase("lost_and_foundDB")
+
+        SendMessage(usrBox.Handle, EM_SETCUEBANNER, New IntPtr(1), "Username")
+        SendMessage(passwordBox.Handle, EM_SETCUEBANNER, New IntPtr(1), "Password")
 
     End Sub
 
@@ -75,9 +62,16 @@ Public Class loginForm
         End If
     End Sub
 
+    Private Sub registry_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles registryLink.LinkClicked
+        registryForm.Show()
+        Me.Hide()
+    End Sub
+
     Private Sub devBtn_Click(sender As Object, e As EventArgs) Handles devBtn.Click
         'This is temporary. Will be taken out after production.
         main_dash.Show()
         Me.Hide()
     End Sub
+
+
 End Class

@@ -36,7 +36,7 @@ Partial Class loginForm
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI Semibold", 75.0F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI Semibold", 75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
         Label1.LiveSetting = Automation.AutomationLiveSetting.Assertive
         Label1.Location = New Point(1766, 247)
@@ -50,13 +50,12 @@ Partial Class loginForm
         ' 
         usrBox.BackColor = Color.SteelBlue
         usrBox.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        usrBox.ForeColor = SystemColors.InactiveCaptionText
+        usrBox.ForeColor = Color.Black
         usrBox.Location = New Point(1711, 583)
         usrBox.Margin = New Padding(4, 5, 4, 5)
         usrBox.Name = "usrBox"
         usrBox.Size = New Size(590, 61)
         usrBox.TabIndex = 1
-        usrBox.Text = "Username"
         ' 
         ' loginbtn
         ' 
@@ -101,13 +100,13 @@ Partial Class loginForm
         ' 
         passwordBox.BackColor = Color.SteelBlue
         passwordBox.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        passwordBox.ForeColor = Color.DarkGray
+        passwordBox.ForeColor = Color.Black
         passwordBox.Location = New Point(1711, 733)
         passwordBox.Margin = New Padding(4, 5, 4, 5)
         passwordBox.Name = "passwordBox"
+        passwordBox.PasswordChar = "*"c
         passwordBox.Size = New Size(590, 61)
         passwordBox.TabIndex = 6
-        passwordBox.Text = "Password"
         ' 
         ' Panel1
         ' 
@@ -122,7 +121,7 @@ Partial Class loginForm
         ' 
         ' devBtn
         ' 
-        devBtn.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        devBtn.Font = New Font("Segoe UI", 12F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         devBtn.ForeColor = SystemColors.ControlText
         devBtn.Location = New Point(1720, 908)
         devBtn.Name = "devBtn"
@@ -133,7 +132,7 @@ Partial Class loginForm
         ' 
         ' loginForm
         ' 
-        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(0), CByte(74), CByte(150))
         CausesValidation = False
