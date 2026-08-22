@@ -30,7 +30,7 @@ Public Class loginForm
 
     End Sub
 
-    Private Sub loginbtn_Click(sender As Object, e As EventArgs) Handles loginbtn.Click
+    Private Async Sub loginbtn_Click(sender As Object, e As EventArgs) Handles loginbtn.Click
 
         'basic input validation, check if all fields are empty
         If String.IsNullOrWhiteSpace(usrBox.Text) OrElse
@@ -58,6 +58,9 @@ Public Class loginForm
 
         If user IsNot Nothing Then
             UserSession.CurrentUserId = user("_id").AsString
+
+            MessageBox.Show($"Welcome back, {usrBox.Text}!", "Successful Login")
+
             main_dash.Show()
             Hide()
         Else
