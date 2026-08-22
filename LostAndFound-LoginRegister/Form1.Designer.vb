@@ -22,6 +22,7 @@ Partial Class loginForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Label1 = New Label()
         usrBox = New TextBox()
         loginbtn = New Button()
@@ -31,6 +32,7 @@ Partial Class loginForm
         Panel1 = New Panel()
         devBtn = New Button()
         chkShowPw = New CheckBox()
+        tipShowPass = New ToolTip(components)
         SuspendLayout()
         ' 
         ' Label1
@@ -50,7 +52,7 @@ Partial Class loginForm
         ' 
         usrBox.BackColor = Color.SteelBlue
         usrBox.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        usrBox.ForeColor = Color.Black
+        usrBox.ForeColor = Color.White
         usrBox.Location = New Point(1711, 583)
         usrBox.Margin = New Padding(4, 5, 4, 5)
         usrBox.Name = "usrBox"
@@ -100,7 +102,7 @@ Partial Class loginForm
         ' 
         passwordBox.BackColor = Color.SteelBlue
         passwordBox.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        passwordBox.ForeColor = Color.Black
+        passwordBox.ForeColor = Color.White
         passwordBox.Location = New Point(1711, 733)
         passwordBox.Margin = New Padding(4, 5, 4, 5)
         passwordBox.Name = "passwordBox"
@@ -132,11 +134,11 @@ Partial Class loginForm
         ' chkShowPw
         ' 
         chkShowPw.AutoSize = True
-        chkShowPw.FlatStyle = FlatStyle.Popup
+        chkShowPw.FlatStyle = FlatStyle.Flat
         chkShowPw.Font = New Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         chkShowPw.Location = New Point(2267, 747)
         chkShowPw.Name = "chkShowPw"
-        chkShowPw.Size = New Size(18, 17)
+        chkShowPw.Size = New Size(17, 16)
         chkShowPw.TabIndex = 8
         chkShowPw.UseVisualStyleBackColor = True
         ' 
@@ -172,5 +174,6 @@ Partial Class loginForm
     Friend WithEvents Panel1 As Panel
     Friend WithEvents devBtn As Button
     Friend WithEvents chkShowPw As CheckBox
+    Friend WithEvents tipShowPass As ToolTip
 
 End Class

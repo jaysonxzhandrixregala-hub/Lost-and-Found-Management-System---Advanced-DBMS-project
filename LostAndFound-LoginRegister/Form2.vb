@@ -1,17 +1,18 @@
 ﻿Imports MongoDB.Driver
 Imports MongoDB.Bson
 Imports DotNetEnv
+Imports System.Runtime.InteropServices
 
 Public Class registryForm
 
     Private client As MongoClient
     Private database As IMongoDatabase
 
-    Private fnameClick As Boolean = True
-    Private lnameClick As Boolean = True
-    Private usernameClick As Boolean = True
-    Private emailClick As Boolean = True
-    Private passwordClick As Boolean = True
+    Private Const EM_SETCUEBANNER As Integer = &H1501
+
+    <DllImport("user32.dll", CharSet:=CharSet.Unicode)>
+    Private Shared Function SendMessage(hWnd As IntPtr, msg As Integer, wParam As IntPtr, lParam As String) As IntPtr
+    End Function
 
     'prevents duplication of unique id
     Private Function GetNextSequence(db As IMongoDatabase, sequenceName As String) As Long
@@ -36,6 +37,15 @@ Public Class registryForm
 
         client = New MongoClient(mongoUri)
         database = client.GetDatabase("lost_and_foundDB")
+
+        SendMessage(fnameBox.Handle, EM_SETCUEBANNER, New IntPtr(1), "First Name")
+        SendMessage(lnameBox.Handle, EM_SETCUEBANNER, New IntPtr(1), "Last Name")
+        SendMessage(usernameBox.Handle, EM_SETCUEBANNER, New IntPtr(1), "Username")
+        SendMessage(emailBox.Handle, EM_SETCUEBANNER, New IntPtr(1), "john@example.com")
+        SendMessage(passwordBox.Handle, EM_SETCUEBANNER, New IntPtr(1), "Password")
+
+        tipPw.SetToolTip(chkRegPass, "Show Password?")
+
     End Sub
 
     'register button
@@ -109,52 +119,24 @@ Public Class registryForm
 
     'go to login form
     Private Sub loginlink_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles loginlink.LinkClicked
+        'clears the fields before leaving
+        fnameBox.Text = Nothing
+        lnameBox.Text = Nothing
+        usernameBox.Text = Nothing
+        emailBox.Text = Nothing
+        passwordBox.Text = Nothing
+
+
         loginForm.Show()
         Me.Hide()
     End Sub
 
-    'textbox labels
-    Private Sub fnameBox_Click(sender As Object, e As EventArgs) Handles fnameBox.Click
-        If fnameClick = True Then
-            fnameBox.Text = Nothing
-            fnameBox.ForeColor = Color.Black
-            fnameClick = False
+    Private Sub chkRegPass_CheckedChanged(sender As Object, e As EventArgs) Handles chkRegPass.CheckedChanged
+        If chkRegPass.Checked Then
+            'remove masking to show plain text
+            passwordBox.PasswordChar = ControlChars.NullChar
+        Else
+            passwordBox.PasswordChar = "•"c
         End If
     End Sub
-
-    Private Sub lnameBox_Click(sender As Object, e As EventArgs) Handles lnameBox.Click
-        If lnameClick = True Then
-            lnameBox.Text = Nothing
-            lnameBox.ForeColor = Color.Black
-            lnameClick = False
-        End If
-    End Sub
-
-    Private Sub usernameBox_Click(sender As Object, e As EventArgs) Handles usernameBox.Click
-        If usernameClick = True Then
-            usernameBox.Text = Nothing
-            usernameBox.ForeColor = Color.Black
-            usernameClick = False
-        End If
-    End Sub
-
-    Private Sub emailBox_Click(sender As Object, e As EventArgs) Handles emailBox.Click
-        If emailClick = True Then
-            emailBox.Text = Nothing
-            emailBox.ForeColor = Color.Black
-            emailClick = False
-        End If
-    End Sub
-
-    Private Sub passwordBox_Click(sender As Object, e As EventArgs) Handles passwordBox.Click
-        If passwordClick = True Then
-            passwordBox.Text = Nothing
-            passwordBox.ForeColor = Color.Black
-            passwordClick = False
-        End If
-    End Sub
-
-    'Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
-
-    'End Sub
 End Class

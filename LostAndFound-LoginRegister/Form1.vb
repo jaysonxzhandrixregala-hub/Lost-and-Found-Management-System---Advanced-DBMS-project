@@ -26,6 +26,8 @@ Public Class loginForm
         SendMessage(usrBox.Handle, EM_SETCUEBANNER, New IntPtr(1), "Username")
         SendMessage(passwordBox.Handle, EM_SETCUEBANNER, New IntPtr(1), "Password")
 
+        tipShowPass.SetToolTip(chkShowPw, "Show Password?")
+
     End Sub
 
     Private Sub loginbtn_Click(sender As Object, e As EventArgs) Handles loginbtn.Click
@@ -59,11 +61,16 @@ Public Class loginForm
             main_dash.Show()
             Hide()
         Else
-            MessageBox.Show("Invalid Email Or Password")
+            MessageBox.Show("Invalid Email Or Password", "Authentication Failed", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
 
     Private Sub registry_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles registryLink.LinkClicked
+        'clear the fields before leaving
+        usrBox.Text = Nothing
+        passwordBox.Text = Nothing
+        chkShowPw.Checked = False
+
         registryForm.Show()
         Me.Hide()
     End Sub
