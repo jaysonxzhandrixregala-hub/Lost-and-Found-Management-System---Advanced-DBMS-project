@@ -108,6 +108,8 @@ Public Class registryForm
 
             usersColl.InsertOne(user)
 
+            MessageBox.Show("Registration complete. You can now log in.", "Registration", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
             loginForm.Show()
             Me.Hide()
 
@@ -125,7 +127,6 @@ Public Class registryForm
         usernameBox.Text = Nothing
         emailBox.Text = Nothing
         passwordBox.Text = Nothing
-
 
         loginForm.Show()
         Me.Hide()
