@@ -91,4 +91,9 @@ Public Class loginForm
             passwordBox.PasswordChar = "•"c
         End If
     End Sub
+
+    Private Sub panellogincard_paint(sender As Object, e As PaintEventArgs) Handles PanelLoginCard.Paint
+        PanelLoginCard.Left = (Me.ClientSize.Width - PanelLoginCard.Width) / 2
+        PanelLoginCard.Top = (Me.ClientSize.Height - PanelLoginCard.Height) / 2
+    End Sub
 End Class

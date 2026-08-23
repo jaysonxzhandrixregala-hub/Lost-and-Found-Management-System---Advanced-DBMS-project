@@ -33,29 +33,31 @@ Partial Class registryForm
         register_button = New Button()
         Label1 = New Label()
         loginlink = New LinkLabel()
-        Panel1 = New Panel()
+        PanelRegCard = New Panel()
         chkRegPass = New CheckBox()
         tipPw = New ToolTip(components)
-        Panel1.SuspendLayout()
+        PanelRegCard.SuspendLayout()
         SuspendLayout()
         ' 
         ' registry_lbl
         ' 
+        registry_lbl.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         registry_lbl.AutoSize = True
-        registry_lbl.Font = New Font("Segoe UI Semibold", 72F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        registry_lbl.Font = New Font("Segoe UI Semibold", 70F, FontStyle.Bold Or FontStyle.Italic)
         registry_lbl.ForeColor = Color.White
         registry_lbl.Location = New Point(34, 35)
         registry_lbl.Name = "registry_lbl"
-        registry_lbl.Size = New Size(1238, 191)
+        registry_lbl.Size = New Size(1204, 186)
         registry_lbl.TabIndex = 0
         registry_lbl.Text = "Registration Form"
         ' 
         ' fnameBox
         ' 
+        fnameBox.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         fnameBox.BackColor = Color.SteelBlue
         fnameBox.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         fnameBox.ForeColor = Color.White
-        fnameBox.Location = New Point(276, 368)
+        fnameBox.Location = New Point(248, 362)
         fnameBox.Margin = New Padding(3, 2, 3, 2)
         fnameBox.Name = "fnameBox"
         fnameBox.Size = New Size(367, 61)
@@ -63,10 +65,11 @@ Partial Class registryForm
         ' 
         ' lnameBox
         ' 
+        lnameBox.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         lnameBox.BackColor = Color.SteelBlue
         lnameBox.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         lnameBox.ForeColor = Color.White
-        lnameBox.Location = New Point(673, 368)
+        lnameBox.Location = New Point(645, 362)
         lnameBox.Margin = New Padding(3, 2, 3, 2)
         lnameBox.Name = "lnameBox"
         lnameBox.Size = New Size(367, 61)
@@ -74,10 +77,11 @@ Partial Class registryForm
         ' 
         ' usernameBox
         ' 
+        usernameBox.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         usernameBox.BackColor = Color.SteelBlue
         usernameBox.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         usernameBox.ForeColor = Color.White
-        usernameBox.Location = New Point(276, 515)
+        usernameBox.Location = New Point(248, 509)
         usernameBox.Margin = New Padding(3, 2, 3, 2)
         usernameBox.Name = "usernameBox"
         usernameBox.Size = New Size(764, 61)
@@ -85,10 +89,11 @@ Partial Class registryForm
         ' 
         ' emailBox
         ' 
+        emailBox.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         emailBox.BackColor = Color.SteelBlue
         emailBox.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         emailBox.ForeColor = Color.White
-        emailBox.Location = New Point(276, 658)
+        emailBox.Location = New Point(248, 652)
         emailBox.Margin = New Padding(3, 2, 3, 2)
         emailBox.Name = "emailBox"
         emailBox.Size = New Size(764, 61)
@@ -96,10 +101,11 @@ Partial Class registryForm
         ' 
         ' passwordBox
         ' 
+        passwordBox.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         passwordBox.BackColor = Color.SteelBlue
         passwordBox.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         passwordBox.ForeColor = Color.White
-        passwordBox.Location = New Point(276, 793)
+        passwordBox.Location = New Point(248, 787)
         passwordBox.Margin = New Padding(3, 2, 3, 2)
         passwordBox.Name = "passwordBox"
         passwordBox.PasswordChar = "•"c
@@ -108,9 +114,10 @@ Partial Class registryForm
         ' 
         ' register_button
         ' 
+        register_button.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
         register_button.BackColor = Color.DodgerBlue
         register_button.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        register_button.Location = New Point(723, 960)
+        register_button.Location = New Point(695, 906)
         register_button.Margin = New Padding(3, 2, 3, 2)
         register_button.Name = "register_button"
         register_button.Size = New Size(319, 77)
@@ -120,10 +127,11 @@ Partial Class registryForm
         ' 
         ' Label1
         ' 
+        Label1.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(276, 947)
+        Label1.Location = New Point(248, 893)
         Label1.Name = "Label1"
         Label1.Size = New Size(380, 45)
         Label1.TabIndex = 8
@@ -131,42 +139,45 @@ Partial Class registryForm
         ' 
         ' loginlink
         ' 
+        loginlink.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         loginlink.AutoSize = True
         loginlink.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         loginlink.ForeColor = Color.Transparent
         loginlink.LinkColor = Color.DodgerBlue
-        loginlink.Location = New Point(534, 992)
+        loginlink.Location = New Point(506, 938)
         loginlink.Name = "loginlink"
         loginlink.Size = New Size(109, 45)
         loginlink.TabIndex = 9
         loginlink.TabStop = True
         loginlink.Text = "Log In"
         ' 
-        ' Panel1
+        ' PanelRegCard
         ' 
-        Panel1.BackColor = Color.FromArgb(CByte(0), CByte(74), CByte(150))
-        Panel1.Controls.Add(chkRegPass)
-        Panel1.Controls.Add(registry_lbl)
-        Panel1.Controls.Add(loginlink)
-        Panel1.Controls.Add(fnameBox)
-        Panel1.Controls.Add(Label1)
-        Panel1.Controls.Add(lnameBox)
-        Panel1.Controls.Add(register_button)
-        Panel1.Controls.Add(usernameBox)
-        Panel1.Controls.Add(passwordBox)
-        Panel1.Controls.Add(emailBox)
-        Panel1.ForeColor = Color.Transparent
-        Panel1.Location = New Point(806, 168)
-        Panel1.Margin = New Padding(4, 5, 4, 5)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(1237, 1378)
-        Panel1.TabIndex = 10
+        PanelRegCard.Anchor = AnchorStyles.None
+        PanelRegCard.BackColor = Color.FromArgb(CByte(0), CByte(74), CByte(150))
+        PanelRegCard.Controls.Add(chkRegPass)
+        PanelRegCard.Controls.Add(registry_lbl)
+        PanelRegCard.Controls.Add(loginlink)
+        PanelRegCard.Controls.Add(fnameBox)
+        PanelRegCard.Controls.Add(Label1)
+        PanelRegCard.Controls.Add(lnameBox)
+        PanelRegCard.Controls.Add(register_button)
+        PanelRegCard.Controls.Add(usernameBox)
+        PanelRegCard.Controls.Add(passwordBox)
+        PanelRegCard.Controls.Add(emailBox)
+        PanelRegCard.ForeColor = Color.Transparent
+        PanelRegCard.Location = New Point(342, 30)
+        PanelRegCard.Margin = New Padding(4, 5, 4, 5)
+        PanelRegCard.Name = "PanelRegCard"
+        PanelRegCard.Size = New Size(1237, 1330)
+        PanelRegCard.TabIndex = 10
         ' 
         ' chkRegPass
         ' 
+        chkRegPass.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         chkRegPass.AutoSize = True
         chkRegPass.FlatStyle = FlatStyle.Popup
-        chkRegPass.Location = New Point(1000, 809)
+        chkRegPass.Location = New Point(972, 803)
         chkRegPass.Name = "chkRegPass"
         chkRegPass.Size = New Size(18, 17)
         chkRegPass.TabIndex = 10
@@ -179,14 +190,16 @@ Partial Class registryForm
         BackColor = Color.SteelBlue
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(2720, 1735)
-        Controls.Add(Panel1)
+        ClientSize = New Size(1898, 1384)
+        Controls.Add(PanelRegCard)
         DoubleBuffered = True
         Margin = New Padding(3, 2, 3, 2)
+        MinimumSize = New Size(1280, 720)
         Name = "registryForm"
         Text = "Form2"
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
+        WindowState = FormWindowState.Maximized
+        PanelRegCard.ResumeLayout(False)
+        PanelRegCard.PerformLayout()
         ResumeLayout(False)
     End Sub
 
@@ -199,7 +212,7 @@ Partial Class registryForm
     Friend WithEvents register_button As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents loginlink As LinkLabel
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents PanelRegCard As Panel
     Friend WithEvents chkRegPass As CheckBox
     Friend WithEvents tipPw As ToolTip
 End Class

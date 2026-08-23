@@ -3,7 +3,7 @@ Imports MongoDB.Bson
 Imports MongoDB.Driver
 Imports DotNetEnv
 Public Class view_window
-    Dim table As New DataTable("Lost and Found Table")
+    'Dim table As New DataTable("Lost and Found Table")
 
     Private client As MongoClient
     Private database As IMongoDatabase
@@ -18,19 +18,10 @@ Public Class view_window
 
         Dim create_collection = database.GetCollection(Of BsonDocument)("createInfo")
 
-        ' Example A: Fetching a single document into a variable
-        Dim singleRecord As BsonDocument = create_collection.Find(New BsonDocument()).FirstOrDefault()
-        table.Rows.Add(singleRecord)
 
-        'If singleRecord IsNot Nothing Then
-        '    ' Print the whole document to the console
-        '    Console.WriteLine("Found record: " & singleRecord.ToJson())
 
-        '    ' Extract a specific field into a string variable
-        '    ' Dim nameVariable As String = singleRecord("name").AsString
-        'Else
-        '    Console.WriteLine("No data found.")
-        'End If
+
+
 
     End Sub
 

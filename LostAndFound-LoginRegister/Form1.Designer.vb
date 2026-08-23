@@ -29,31 +29,34 @@ Partial Class loginForm
         Label2 = New Label()
         registryLink = New LinkLabel()
         passwordBox = New TextBox()
-        Panel1 = New Panel()
-        devBtn = New Button()
+        PanelLoginCard = New Panel()
         chkShowPw = New CheckBox()
+        devBtn = New Button()
         tipShowPass = New ToolTip(components)
+        PanelLoginCard.SuspendLayout()
         SuspendLayout()
         ' 
         ' Label1
         ' 
+        Label1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI Semibold", 75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI Semibold", 45F, FontStyle.Bold Or FontStyle.Italic)
         Label1.ForeColor = Color.White
         Label1.LiveSetting = Automation.AutomationLiveSetting.Assertive
-        Label1.Location = New Point(1766, 247)
+        Label1.Location = New Point(389, 139)
         Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(497, 199)
+        Label1.Size = New Size(298, 120)
         Label1.TabIndex = 0
         Label1.Text = "Log In"
         ' 
         ' usrBox
         ' 
+        usrBox.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         usrBox.BackColor = Color.SteelBlue
         usrBox.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         usrBox.ForeColor = Color.White
-        usrBox.Location = New Point(1711, 583)
+        usrBox.Location = New Point(248, 349)
         usrBox.Margin = New Padding(4, 5, 4, 5)
         usrBox.Name = "usrBox"
         usrBox.Size = New Size(590, 61)
@@ -61,10 +64,11 @@ Partial Class loginForm
         ' 
         ' loginbtn
         ' 
+        loginbtn.Anchor = AnchorStyles.Bottom
         loginbtn.BackColor = Color.DodgerBlue
         loginbtn.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         loginbtn.ForeColor = Color.White
-        loginbtn.Location = New Point(1854, 903)
+        loginbtn.Location = New Point(377, 631)
         loginbtn.Margin = New Padding(4, 5, 4, 5)
         loginbtn.Name = "loginbtn"
         loginbtn.Size = New Size(346, 75)
@@ -74,10 +78,11 @@ Partial Class loginForm
         ' 
         ' Label2
         ' 
+        Label2.Anchor = AnchorStyles.Bottom
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(1766, 1062)
+        Label2.Location = New Point(299, 758)
         Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
         Label2.Size = New Size(350, 45)
@@ -86,11 +91,12 @@ Partial Class loginForm
         ' 
         ' registryLink
         ' 
+        registryLink.Anchor = AnchorStyles.Bottom
         registryLink.AutoSize = True
         registryLink.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         registryLink.ForeColor = Color.FromArgb(CByte(59), CByte(54), CByte(75))
         registryLink.LinkColor = Color.DodgerBlue
-        registryLink.Location = New Point(2110, 1062)
+        registryLink.Location = New Point(645, 758)
         registryLink.Margin = New Padding(4, 0, 4, 0)
         registryLink.Name = "registryLink"
         registryLink.Size = New Size(118, 45)
@@ -100,69 +106,76 @@ Partial Class loginForm
         ' 
         ' passwordBox
         ' 
+        passwordBox.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         passwordBox.BackColor = Color.SteelBlue
         passwordBox.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         passwordBox.ForeColor = Color.White
-        passwordBox.Location = New Point(1711, 733)
+        passwordBox.Location = New Point(248, 499)
         passwordBox.Margin = New Padding(4, 5, 4, 5)
         passwordBox.Name = "passwordBox"
         passwordBox.PasswordChar = "•"c
         passwordBox.Size = New Size(590, 61)
         passwordBox.TabIndex = 6
         ' 
-        ' Panel1
+        ' PanelLoginCard
         ' 
-        Panel1.BackColor = Color.DodgerBlue
-        Panel1.BackgroundImageLayout = ImageLayout.Stretch
-        Panel1.Location = New Point(-1, -5)
-        Panel1.Margin = New Padding(4, 5, 4, 5)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(1373, 1763)
-        Panel1.TabIndex = 5
+        PanelLoginCard.Anchor = AnchorStyles.None
+        PanelLoginCard.BackColor = Color.FromArgb(CByte(0), CByte(74), CByte(150))
+        PanelLoginCard.BackgroundImageLayout = ImageLayout.Stretch
+        PanelLoginCard.Controls.Add(chkShowPw)
+        PanelLoginCard.Controls.Add(loginbtn)
+        PanelLoginCard.Controls.Add(devBtn)
+        PanelLoginCard.Controls.Add(Label1)
+        PanelLoginCard.Controls.Add(passwordBox)
+        PanelLoginCard.Controls.Add(usrBox)
+        PanelLoginCard.Controls.Add(Label2)
+        PanelLoginCard.Controls.Add(registryLink)
+        PanelLoginCard.Location = New Point(432, 14)
+        PanelLoginCard.Margin = New Padding(4, 5, 4, 5)
+        PanelLoginCard.Name = "PanelLoginCard"
+        PanelLoginCard.Size = New Size(1091, 996)
+        PanelLoginCard.TabIndex = 5
+        ' 
+        ' chkShowPw
+        ' 
+        chkShowPw.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        chkShowPw.AutoSize = True
+        chkShowPw.FlatStyle = FlatStyle.Flat
+        chkShowPw.Font = New Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        chkShowPw.Location = New Point(804, 513)
+        chkShowPw.Name = "chkShowPw"
+        chkShowPw.Size = New Size(17, 16)
+        chkShowPw.TabIndex = 8
+        chkShowPw.UseVisualStyleBackColor = True
         ' 
         ' devBtn
         ' 
+        devBtn.Anchor = AnchorStyles.Left
         devBtn.Font = New Font("Segoe UI", 12F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         devBtn.ForeColor = SystemColors.ControlText
-        devBtn.Location = New Point(1720, 908)
+        devBtn.Location = New Point(248, 638)
         devBtn.Name = "devBtn"
         devBtn.Size = New Size(94, 68)
         devBtn.TabIndex = 7
         devBtn.Text = "dev"
         devBtn.UseVisualStyleBackColor = True
         ' 
-        ' chkShowPw
-        ' 
-        chkShowPw.AutoSize = True
-        chkShowPw.FlatStyle = FlatStyle.Flat
-        chkShowPw.Font = New Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        chkShowPw.Location = New Point(2267, 747)
-        chkShowPw.Name = "chkShowPw"
-        chkShowPw.Size = New Size(17, 16)
-        chkShowPw.TabIndex = 8
-        chkShowPw.UseVisualStyleBackColor = True
-        ' 
         ' loginForm
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.FromArgb(CByte(0), CByte(74), CByte(150))
+        BackColor = Color.DodgerBlue
         CausesValidation = False
-        ClientSize = New Size(2587, 1502)
-        Controls.Add(chkShowPw)
-        Controls.Add(devBtn)
-        Controls.Add(passwordBox)
-        Controls.Add(Panel1)
-        Controls.Add(registryLink)
-        Controls.Add(Label2)
-        Controls.Add(loginbtn)
-        Controls.Add(usrBox)
-        Controls.Add(Label1)
+        ClientSize = New Size(1898, 1024)
+        Controls.Add(PanelLoginCard)
         Margin = New Padding(4, 5, 4, 5)
+        MinimumSize = New Size(1280, 720)
         Name = "loginForm"
         Text = "Form1"
+        WindowState = FormWindowState.Maximized
+        PanelLoginCard.ResumeLayout(False)
+        PanelLoginCard.PerformLayout()
         ResumeLayout(False)
-        PerformLayout()
     End Sub
 
     Friend WithEvents Label1 As Label
@@ -171,7 +184,7 @@ Partial Class loginForm
     Friend WithEvents Label2 As Label
     Friend WithEvents registryLink As LinkLabel
     Friend WithEvents passwordBox As TextBox
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents PanelLoginCard As Panel
     Friend WithEvents devBtn As Button
     Friend WithEvents chkShowPw As CheckBox
     Friend WithEvents tipShowPass As ToolTip
