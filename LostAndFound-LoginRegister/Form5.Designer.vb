@@ -22,151 +22,142 @@ Partial Class view_window
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Panel1 = New Panel()
         rvitemslabel = New Label()
         searchlabel = New Label()
         TextBox1 = New TextBox()
         searchbutton = New Button()
         viewClose_btn = New Button()
-        DataGridView1 = New DataGridView()
-        Column1 = New DataGridViewTextBoxColumn()
-        Column2 = New DataGridViewTextBoxColumn()
-        Column3 = New DataGridViewTextBoxColumn()
-        Column4 = New DataGridViewTextBoxColumn()
-        Column5 = New DataGridViewTextBoxColumn()
-        Column6 = New DataGridViewTextBoxColumn()
+        Lnf_DataGrid = New DataGridView()
+        UserSessionBindingSource = New BindingSource(components)
+        TLP_datagrid = New TableLayoutPanel()
         Panel1.SuspendLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(Lnf_DataGrid, ComponentModel.ISupportInitialize).BeginInit()
+        CType(UserSessionBindingSource, ComponentModel.ISupportInitialize).BeginInit()
+        TLP_datagrid.SuspendLayout()
         SuspendLayout()
         ' 
         ' Panel1
         ' 
+        Panel1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         Panel1.BackColor = Color.DeepSkyBlue
         Panel1.Controls.Add(rvitemslabel)
-        Panel1.Location = New Point(-4, -20)
+        Panel1.Location = New Point(-6, -33)
+        Panel1.Margin = New Padding(4, 5, 4, 5)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(1912, 205)
+        Panel1.Size = New Size(2731, 342)
         Panel1.TabIndex = 0
         ' 
         ' rvitemslabel
         ' 
+        rvitemslabel.Anchor = AnchorStyles.Top
         rvitemslabel.AutoSize = True
         rvitemslabel.Font = New Font("Segoe UI Semibold", 72F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        rvitemslabel.Location = New Point(531, 49)
+        rvitemslabel.Location = New Point(759, 82)
+        rvitemslabel.Margin = New Padding(4, 0, 4, 0)
         rvitemslabel.Name = "rvitemslabel"
-        rvitemslabel.Size = New Size(923, 128)
+        rvitemslabel.Size = New Size(1383, 191)
         rvitemslabel.TabIndex = 0
         rvitemslabel.Text = "READ / VIEW ITEMS"
         ' 
         ' searchlabel
         ' 
+        searchlabel.Anchor = AnchorStyles.Top
         searchlabel.AutoSize = True
         searchlabel.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        searchlabel.Location = New Point(546, 247)
+        searchlabel.Location = New Point(780, 412)
+        searchlabel.Margin = New Padding(4, 0, 4, 0)
         searchlabel.Name = "searchlabel"
-        searchlabel.Size = New Size(107, 40)
+        searchlabel.Size = New Size(163, 60)
         searchlabel.TabIndex = 1
         searchlabel.Text = "Search:"
         ' 
         ' TextBox1
         ' 
+        TextBox1.Anchor = AnchorStyles.Top
         TextBox1.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox1.Location = New Point(705, 244)
+        TextBox1.Location = New Point(1007, 407)
+        TextBox1.Margin = New Padding(4, 5, 4, 5)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(414, 46)
+        TextBox1.Size = New Size(590, 65)
         TextBox1.TabIndex = 2
         ' 
         ' searchbutton
         ' 
+        searchbutton.Anchor = AnchorStyles.Top
         searchbutton.BackColor = SystemColors.ActiveBorder
         searchbutton.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        searchbutton.Location = New Point(1160, 242)
+        searchbutton.Location = New Point(1657, 403)
+        searchbutton.Margin = New Padding(4, 5, 4, 5)
         searchbutton.Name = "searchbutton"
-        searchbutton.Size = New Size(234, 51)
+        searchbutton.Size = New Size(334, 85)
         searchbutton.TabIndex = 3
         searchbutton.Text = "Search"
         searchbutton.UseVisualStyleBackColor = False
         ' 
         ' viewClose_btn
         ' 
+        viewClose_btn.Anchor = AnchorStyles.Bottom
         viewClose_btn.BackColor = SystemColors.ActiveBorder
         viewClose_btn.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        viewClose_btn.Location = New Point(1149, 908)
+        viewClose_btn.Location = New Point(1641, 1513)
+        viewClose_btn.Margin = New Padding(4, 5, 4, 5)
         viewClose_btn.Name = "viewClose_btn"
-        viewClose_btn.Size = New Size(234, 61)
+        viewClose_btn.Size = New Size(334, 102)
         viewClose_btn.TabIndex = 5
         viewClose_btn.Text = "Close"
         viewClose_btn.UseVisualStyleBackColor = False
         ' 
-        ' DataGridView1
+        ' Lnf_DataGrid
         ' 
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column6})
-        DataGridView1.Location = New Point(555, 364)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowHeadersWidth = 62
-        DataGridView1.Size = New Size(839, 500)
-        DataGridView1.TabIndex = 6
+        Lnf_DataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Lnf_DataGrid.Location = New Point(4, 5)
+        Lnf_DataGrid.Margin = New Padding(4, 5, 4, 5)
+        Lnf_DataGrid.Name = "Lnf_DataGrid"
+        Lnf_DataGrid.RowHeadersWidth = 62
+        Lnf_DataGrid.Size = New Size(1199, 833)
+        Lnf_DataGrid.TabIndex = 6
         ' 
-        ' Column1
+        ' UserSessionBindingSource
         ' 
-        Column1.HeaderText = "ID"
-        Column1.MinimumWidth = 8
-        Column1.Name = "Column1"
-        Column1.Width = 80
+        UserSessionBindingSource.DataSource = GetType(UserSession)
         ' 
-        ' Column2
+        ' TLP_datagrid
         ' 
-        Column2.HeaderText = "Item Name"
-        Column2.MinimumWidth = 8
-        Column2.Name = "Column2"
-        Column2.Width = 180
-        ' 
-        ' Column3
-        ' 
-        Column3.HeaderText = "Category"
-        Column3.MinimumWidth = 8
-        Column3.Name = "Column3"
-        Column3.Width = 150
-        ' 
-        ' Column4
-        ' 
-        Column4.HeaderText = "Location"
-        Column4.MinimumWidth = 8
-        Column4.Name = "Column4"
-        Column4.Width = 150
-        ' 
-        ' Column5
-        ' 
-        Column5.HeaderText = "Date"
-        Column5.MinimumWidth = 8
-        Column5.Name = "Column5"
-        Column5.Width = 120
-        ' 
-        ' Column6
-        ' 
-        Column6.HeaderText = "Status"
-        Column6.MinimumWidth = 8
-        Column6.Name = "Column6"
-        Column6.Width = 120
+        TLP_datagrid.Anchor = AnchorStyles.None
+        TLP_datagrid.ColumnCount = 1
+        TLP_datagrid.ColumnStyles.Add(New ColumnStyle())
+        TLP_datagrid.Controls.Add(Lnf_DataGrid, 0, 0)
+        TLP_datagrid.Location = New Point(801, 615)
+        TLP_datagrid.Name = "TLP_datagrid"
+        TLP_datagrid.RowCount = 1
+        TLP_datagrid.RowStyles.Add(New RowStyle())
+        TLP_datagrid.Size = New Size(1199, 833)
+        TLP_datagrid.TabIndex = 7
         ' 
         ' view_window
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.LightSkyBlue
-        ClientSize = New Size(1904, 1041)
-        Controls.Add(DataGridView1)
+        ClientSize = New Size(2720, 1735)
+        Controls.Add(TLP_datagrid)
         Controls.Add(viewClose_btn)
         Controls.Add(searchbutton)
         Controls.Add(TextBox1)
         Controls.Add(searchlabel)
         Controls.Add(Panel1)
+        Margin = New Padding(4, 5, 4, 5)
+        MinimumSize = New Size(1280, 720)
         Name = "view_window"
         Text = "Form5"
+        WindowState = FormWindowState.Maximized
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(Lnf_DataGrid, ComponentModel.ISupportInitialize).EndInit()
+        CType(UserSessionBindingSource, ComponentModel.ISupportInitialize).EndInit()
+        TLP_datagrid.ResumeLayout(False)
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -177,11 +168,7 @@ Partial Class view_window
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents searchbutton As Button
     Friend WithEvents viewClose_btn As Button
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Lnf_DataGrid As DataGridView
+    Friend WithEvents UserSessionBindingSource As BindingSource
+    Friend WithEvents TLP_datagrid As TableLayoutPanel
 End Class

@@ -140,4 +140,9 @@ Public Class registryForm
             passwordBox.PasswordChar = "•"c
         End If
     End Sub
+
+    Private Sub PanelRegCard_Paint(sender As Object, e As PaintEventArgs) Handles PanelRegCard.Paint
+        PanelRegCard.Left = (Me.ClientSize.Width - PanelRegCard.Width) / 2
+        PanelRegCard.Top = (Me.ClientSize.Height - PanelRegCard.Height) / 2
+    End Sub
 End Class
