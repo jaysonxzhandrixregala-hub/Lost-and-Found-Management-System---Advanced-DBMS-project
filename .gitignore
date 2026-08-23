@@ -6,3 +6,8 @@ obj/
 .env
 *.user
 *.suo
+[Bb]in/
+[Oo]bj/
+*.dll
+*.pdb
+*.cache
