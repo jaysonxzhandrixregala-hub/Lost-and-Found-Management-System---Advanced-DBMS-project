@@ -29,11 +29,12 @@ Partial Class view_window
         TextBox1 = New TextBox()
         searchbutton = New Button()
         viewClose_btn = New Button()
-        Lnf_DataGrid = New DataGridView()
+        dgvLnf = New DataGridView()
         UserSessionBindingSource = New BindingSource(components)
         TLP_datagrid = New TableLayoutPanel()
+        refreshBtn = New Button()
         Panel1.SuspendLayout()
-        CType(Lnf_DataGrid, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvLnf, ComponentModel.ISupportInitialize).BeginInit()
         CType(UserSessionBindingSource, ComponentModel.ISupportInitialize).BeginInit()
         TLP_datagrid.SuspendLayout()
         SuspendLayout()
@@ -109,15 +110,15 @@ Partial Class view_window
         viewClose_btn.Text = "Close"
         viewClose_btn.UseVisualStyleBackColor = False
         ' 
-        ' Lnf_DataGrid
+        ' dgvLnf
         ' 
-        Lnf_DataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Lnf_DataGrid.Location = New Point(4, 5)
-        Lnf_DataGrid.Margin = New Padding(4, 5, 4, 5)
-        Lnf_DataGrid.Name = "Lnf_DataGrid"
-        Lnf_DataGrid.RowHeadersWidth = 62
-        Lnf_DataGrid.Size = New Size(1199, 833)
-        Lnf_DataGrid.TabIndex = 6
+        dgvLnf.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvLnf.Location = New Point(4, 5)
+        dgvLnf.Margin = New Padding(4, 5, 4, 5)
+        dgvLnf.Name = "dgvLnf"
+        dgvLnf.RowHeadersWidth = 62
+        dgvLnf.Size = New Size(1199, 833)
+        dgvLnf.TabIndex = 6
         ' 
         ' UserSessionBindingSource
         ' 
@@ -128,7 +129,7 @@ Partial Class view_window
         TLP_datagrid.Anchor = AnchorStyles.None
         TLP_datagrid.ColumnCount = 1
         TLP_datagrid.ColumnStyles.Add(New ColumnStyle())
-        TLP_datagrid.Controls.Add(Lnf_DataGrid, 0, 0)
+        TLP_datagrid.Controls.Add(dgvLnf, 0, 0)
         TLP_datagrid.Location = New Point(801, 615)
         TLP_datagrid.Name = "TLP_datagrid"
         TLP_datagrid.RowCount = 1
@@ -136,12 +137,26 @@ Partial Class view_window
         TLP_datagrid.Size = New Size(1199, 833)
         TLP_datagrid.TabIndex = 7
         ' 
+        ' refreshBtn
+        ' 
+        refreshBtn.Anchor = AnchorStyles.Top
+        refreshBtn.BackColor = SystemColors.ActiveBorder
+        refreshBtn.Font = New Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        refreshBtn.Location = New Point(1883, 498)
+        refreshBtn.Margin = New Padding(4, 5, 4, 5)
+        refreshBtn.Name = "refreshBtn"
+        refreshBtn.Size = New Size(108, 109)
+        refreshBtn.TabIndex = 8
+        refreshBtn.Text = "🔄"
+        refreshBtn.UseVisualStyleBackColor = False
+        ' 
         ' view_window
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.LightSkyBlue
         ClientSize = New Size(2720, 1735)
+        Controls.Add(refreshBtn)
         Controls.Add(TLP_datagrid)
         Controls.Add(viewClose_btn)
         Controls.Add(searchbutton)
@@ -155,7 +170,7 @@ Partial Class view_window
         WindowState = FormWindowState.Maximized
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
-        CType(Lnf_DataGrid, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvLnf, ComponentModel.ISupportInitialize).EndInit()
         CType(UserSessionBindingSource, ComponentModel.ISupportInitialize).EndInit()
         TLP_datagrid.ResumeLayout(False)
         ResumeLayout(False)
@@ -168,7 +183,8 @@ Partial Class view_window
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents searchbutton As Button
     Friend WithEvents viewClose_btn As Button
-    Friend WithEvents Lnf_DataGrid As DataGridView
+    Friend WithEvents dgvLnf As DataGridView
     Friend WithEvents UserSessionBindingSource As BindingSource
     Friend WithEvents TLP_datagrid As TableLayoutPanel
+    Friend WithEvents refreshBtn As Button
 End Class
