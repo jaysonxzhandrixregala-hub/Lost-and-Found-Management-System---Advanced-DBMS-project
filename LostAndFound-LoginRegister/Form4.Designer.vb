@@ -154,7 +154,7 @@ Partial Class create_window
         save_btn.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         save_btn.BackColor = Color.PaleGreen
         save_btn.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        save_btn.Location = New Point(925, 925)
+        save_btn.Location = New Point(925, 1142)
         save_btn.Name = "save_btn"
         save_btn.Size = New Size(234, 56)
         save_btn.TabIndex = 14
@@ -166,7 +166,7 @@ Partial Class create_window
         clearbutton.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
         clearbutton.BackColor = SystemColors.ActiveBorder
         clearbutton.Font = New Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        clearbutton.Location = New Point(1242, 925)
+        clearbutton.Location = New Point(1242, 1142)
         clearbutton.Name = "clearbutton"
         clearbutton.Size = New Size(234, 56)
         clearbutton.TabIndex = 15
@@ -181,7 +181,7 @@ Partial Class create_window
         cmbCategory.FormattingEnabled = True
         cmbCategory.Items.AddRange(New Object() {"Valuable", "Non-Valuable", "Perishable"})
         cmbCategory.Location = New Point(902, 463)
-        cmbCategory.Margin = New Padding(2, 2, 2, 2)
+        cmbCategory.Margin = New Padding(2)
         cmbCategory.Name = "cmbCategory"
         cmbCategory.Size = New Size(657, 48)
         cmbCategory.TabIndex = 16
@@ -193,7 +193,7 @@ Partial Class create_window
         cmbStatus.FormattingEnabled = True
         cmbStatus.Items.AddRange(New Object() {"Lost", "Found", "Unclaimed"})
         cmbStatus.Location = New Point(902, 802)
-        cmbStatus.Margin = New Padding(2, 2, 2, 2)
+        cmbStatus.Margin = New Padding(2)
         cmbStatus.Name = "cmbStatus"
         cmbStatus.Size = New Size(657, 48)
         cmbStatus.TabIndex = 17
@@ -203,7 +203,7 @@ Partial Class create_window
         datePicker.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         datePicker.Font = New Font("Segoe UI", 21.75F)
         datePicker.Location = New Point(902, 679)
-        datePicker.Margin = New Padding(2, 2, 2, 2)
+        datePicker.Margin = New Padding(2)
         datePicker.Name = "datePicker"
         datePicker.Size = New Size(657, 46)
         datePicker.TabIndex = 18
@@ -214,7 +214,7 @@ Partial Class create_window
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DarkSeaGreen
-        ClientSize = New Size(1347, 637)
+        ClientSize = New Size(1347, 854)
         Controls.Add(datePicker)
         Controls.Add(cmbStatus)
         Controls.Add(cmbCategory)
