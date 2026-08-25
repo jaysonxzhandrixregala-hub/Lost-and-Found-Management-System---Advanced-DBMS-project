@@ -19,7 +19,7 @@
 
     'window calling
     Private Sub create_btn_Click(sender As Object, e As EventArgs) Handles create_btn.Click
-        create_window.Show()
+        CreateWindow.Show()
         Me.Hide() 'we could also not?
     End Sub
 
