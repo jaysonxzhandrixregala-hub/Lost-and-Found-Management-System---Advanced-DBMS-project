@@ -77,6 +77,7 @@ Partial Class UpdateForm
         ' cmb_createId
         ' 
         cmb_createId.Anchor = AnchorStyles.None
+        cmb_createId.DropDownStyle = ComboBoxStyle.DropDownList
         cmb_createId.Font = New Font("Segoe UI", 12F)
         cmb_createId.FormattingEnabled = True
         cmb_createId.Location = New Point(406, 143)
@@ -206,6 +207,7 @@ Partial Class UpdateForm
         ' cmbCategory
         ' 
         cmbCategory.Anchor = AnchorStyles.None
+        cmbCategory.DropDownStyle = ComboBoxStyle.DropDownList
         cmbCategory.Font = New Font("Segoe UI", 12F)
         cmbCategory.FormattingEnabled = True
         cmbCategory.Items.AddRange(New Object() {"Electronics & Gadgets", "IDs, Wallets & Cards", "Keys & Access", "Bags & Luggage", "Apparel & Eyewear", "Jewelry & Keepsakes", "Drinkware & Containers", "Books & Stationery", "Sports & Outdoor", "Perishables & Medical"})
@@ -226,6 +228,7 @@ Partial Class UpdateForm
         ' cmbStatus
         ' 
         cmbStatus.Anchor = AnchorStyles.None
+        cmbStatus.DropDownStyle = ComboBoxStyle.DropDownList
         cmbStatus.Font = New Font("Segoe UI", 12F)
         cmbStatus.FormattingEnabled = True
         cmbStatus.Items.AddRange(New Object() {"Lost", "Found"})

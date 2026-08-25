@@ -34,7 +34,7 @@
     End Sub
 
     Private Sub del_btn_Click(sender As Object, e As EventArgs) Handles del_btn.Click
-        deletion_window.Show()
+        DeletionForm.Show()
         Me.Hide()
     End Sub
 
