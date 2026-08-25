@@ -30,7 +30,7 @@ Public Class loginForm
 
     End Sub
 
-    Private Async Sub loginbtn_Click(sender As Object, e As EventArgs) Handles loginbtn.Click
+    Private Sub loginbtn_Click(sender As Object, e As EventArgs) Handles loginbtn.Click
 
         'basic input validation, check if all fields are empty
         If String.IsNullOrWhiteSpace(usrBox.Text) OrElse
