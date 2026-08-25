@@ -29,7 +29,7 @@
     End Sub
 
     Private Sub update_btn_Click(sender As Object, e As EventArgs) Handles update_btn.Click
-        update_window.Show()
+        UpdateForm.Show()
         Me.Hide()
     End Sub
 
