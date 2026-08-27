@@ -24,7 +24,8 @@
     End Sub
 
     Private Sub read_btn_Click(sender As Object, e As EventArgs) Handles read_btn.Click
-        view_window.Show()
+        'view_window.Show()
+        testdesign.Show()
         Me.Hide()
     End Sub
 
