@@ -22,180 +22,167 @@ Partial Class testdesign
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.pnlCard = New System.Windows.Forms.Panel()
-        Me.lblTitle = New System.Windows.Forms.Label()
-        Me.lblSubtitle = New System.Windows.Forms.Label()
-        Me.lblUsername = New System.Windows.Forms.Label()
-        Me.txtUsername = New System.Windows.Forms.TextBox()
-        Me.lblPassword = New System.Windows.Forms.Label()
-        Me.txtPassword = New System.Windows.Forms.TextBox()
-        Me.chkRemember = New System.Windows.Forms.CheckBox()
-        Me.lnkForgot = New System.Windows.Forms.LinkLabel()
-        Me.btnLogin = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
-        Me.pnlCard.SuspendLayout()
+        Dim dataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim dataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim dataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.uiPanelHeader = New System.Windows.Forms.Panel()
+        Me.refreshBtn = New System.Windows.Forms.Button()
+        Me.viewClose_btn = New System.Windows.Forms.Button()
+        Me.uiLabelSubtitle = New System.Windows.Forms.Label()
+        Me.uiLabelTitle = New System.Windows.Forms.Label()
+        Me.uiPanelGrid = New System.Windows.Forms.Panel()
+        Me.dgvLnf = New System.Windows.Forms.DataGridView()
+        Me.uiPanelHeader.SuspendLayout()
+        Me.uiPanelGrid.SuspendLayout()
+        CType(Me.dgvLnf, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        ' pnlCard
+        ' uiPanelHeader
         '
-        Me.pnlCard.BackColor = System.Drawing.Color.White
-        Me.pnlCard.Controls.Add(Me.btnLogin)
-        Me.pnlCard.Controls.Add(Me.lnkForgot)
-        Me.pnlCard.Controls.Add(Me.chkRemember)
-        Me.pnlCard.Controls.Add(Me.txtPassword)
-        Me.pnlCard.Controls.Add(Me.lblPassword)
-        Me.pnlCard.Controls.Add(Me.txtUsername)
-        Me.pnlCard.Controls.Add(Me.lblUsername)
-        Me.pnlCard.Controls.Add(Me.lblSubtitle)
-        Me.pnlCard.Controls.Add(Me.lblTitle)
-        Me.pnlCard.Location = New System.Drawing.Point(220, 35)
-        Me.pnlCard.Name = "pnlCard"
-        Me.pnlCard.Size = New System.Drawing.Size(360, 380)
-        Me.pnlCard.TabIndex = 0
+        Me.uiPanelHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(249, Byte), Integer))
+        Me.uiPanelHeader.Controls.Add(Me.refreshBtn)
+        Me.uiPanelHeader.Controls.Add(Me.viewClose_btn)
+        Me.uiPanelHeader.Controls.Add(Me.uiLabelSubtitle)
+        Me.uiPanelHeader.Controls.Add(Me.uiLabelTitle)
+        Me.uiPanelHeader.Dock = System.Windows.Forms.DockStyle.Top
+        Me.uiPanelHeader.Location = New System.Drawing.Point(0, 0)
+        Me.uiPanelHeader.Name = "uiPanelHeader"
+        Me.uiPanelHeader.Size = New System.Drawing.Size(1920, 110)
+        Me.uiPanelHeader.TabIndex = 0
         '
-        ' lblTitle
+        ' refreshBtn
         '
-        Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.lblTitle.Location = New System.Drawing.Point(35, 30)
-        Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(184, 32)
-        Me.lblTitle.TabIndex = 0
-        Me.lblTitle.Text = "Welcome Back"
+        Me.refreshBtn.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.refreshBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(79, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(229, Byte), Integer))
+        Me.refreshBtn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.refreshBtn.FlatAppearance.BorderSize = 0
+        Me.refreshBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.refreshBtn.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.refreshBtn.ForeColor = System.Drawing.Color.White
+        Me.refreshBtn.Location = New System.Drawing.Point(1705, 38)
+        Me.refreshBtn.Name = "refreshBtn"
+        Me.refreshBtn.Size = New System.Drawing.Size(130, 42)
+        Me.refreshBtn.TabIndex = 3
+        Me.refreshBtn.Text = "↻ Refresh"
+        Me.refreshBtn.UseVisualStyleBackColor = False
         '
-        ' lblSubtitle
+        ' viewClose_btn
         '
-        Me.lblSubtitle.AutoSize = True
-        Me.lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblSubtitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(116, Byte), Integer), CType(CType(139, Byte), Integer))
-        Me.lblSubtitle.Location = New System.Drawing.Point(37, 65)
-        Me.lblSubtitle.Name = "lblSubtitle"
-        Me.lblSubtitle.Size = New System.Drawing.Size(175, 15)
-        Me.lblSubtitle.TabIndex = 1
-        Me.lblSubtitle.Text = "Please sign in to your account"
+        Me.viewClose_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.viewClose_btn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.viewClose_btn.FlatAppearance.BorderSize = 0
+        Me.viewClose_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.viewClose_btn.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.viewClose_btn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(148, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(184, Byte), Integer))
+        Me.viewClose_btn.Location = New System.Drawing.Point(1860, 20)
+        Me.viewClose_btn.Name = "viewClose_btn"
+        Me.viewClose_btn.Size = New System.Drawing.Size(35, 35)
+        Me.viewClose_btn.TabIndex = 0
+        Me.viewClose_btn.Text = "✕"
+        Me.viewClose_btn.UseVisualStyleBackColor = True
         '
-        ' lblUsername
+        ' uiLabelSubtitle
         '
-        Me.lblUsername.AutoSize = True
-        Me.lblUsername.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblUsername.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(85, Byte), Integer))
-        Me.lblUsername.Location = New System.Drawing.Point(37, 105)
-        Me.lblUsername.Name = "lblUsername"
-        Me.lblUsername.Size = New System.Drawing.Size(60, 15)
-        Me.lblUsername.TabIndex = 2
-        Me.lblUsername.Text = "Username"
+        Me.uiLabelSubtitle.AutoSize = True
+        Me.uiLabelSubtitle.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.uiLabelSubtitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(116, Byte), Integer), CType(CType(139, Byte), Integer))
+        Me.uiLabelSubtitle.Location = New System.Drawing.Point(40, 65)
+        Me.uiLabelSubtitle.Name = "uiLabelSubtitle"
+        Me.uiLabelSubtitle.Size = New System.Drawing.Size(262, 19)
+        Me.uiLabelSubtitle.TabIndex = 2
+        Me.uiLabelSubtitle.Text = "Manage and track lost and found items"
         '
-        ' txtUsername
+        ' uiLabelTitle
         '
-        Me.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtUsername.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtUsername.Location = New System.Drawing.Point(40, 125)
-        Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(280, 25)
-        Me.txtUsername.TabIndex = 3
+        Me.uiLabelTitle.AutoSize = True
+        Me.uiLabelTitle.Font = New System.Drawing.Font("Segoe UI", 22.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.uiLabelTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.uiLabelTitle.Location = New System.Drawing.Point(36, 22)
+        Me.uiLabelTitle.Name = "uiLabelTitle"
+        Me.uiLabelTitle.Size = New System.Drawing.Size(315, 40)
+        Me.uiLabelTitle.TabIndex = 1
+        Me.uiLabelTitle.Text = "Lost & Found Registry"
         '
-        ' lblPassword
+        ' uiPanelGrid
         '
-        Me.lblPassword.AutoSize = True
-        Me.lblPassword.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(85, Byte), Integer))
-        Me.lblPassword.Location = New System.Drawing.Point(37, 165)
-        Me.lblPassword.Name = "lblPassword"
-        Me.lblPassword.Size = New System.Drawing.Size(57, 15)
-        Me.lblPassword.TabIndex = 4
-        Me.lblPassword.Text = "Password"
+        Me.uiPanelGrid.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.uiPanelGrid.BackColor = System.Drawing.Color.White
+        Me.uiPanelGrid.Controls.Add(Me.dgvLnf)
+        Me.uiPanelGrid.Location = New System.Drawing.Point(40, 130)
+        Me.uiPanelGrid.Name = "uiPanelGrid"
+        Me.uiPanelGrid.Padding = New System.Windows.Forms.Padding(1)
+        Me.uiPanelGrid.Size = New System.Drawing.Size(1840, 900)
+        Me.uiPanelGrid.TabIndex = 1
         '
-        ' txtPassword
+        ' dgvLnf
         '
-        Me.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtPassword.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtPassword.Location = New System.Drawing.Point(40, 185)
-        Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(280, 25)
-        Me.txtPassword.TabIndex = 5
-        Me.txtPassword.UseSystemPasswordChar = True
-        '
-        ' chkRemember
-        '
-        Me.chkRemember.AutoSize = True
-        Me.chkRemember.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.chkRemember.ForeColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(116, Byte), Integer), CType(CType(139, Byte), Integer))
-        Me.chkRemember.Location = New System.Drawing.Point(40, 225)
-        Me.chkRemember.Name = "chkRemember"
-        Me.chkRemember.Size = New System.Drawing.Size(104, 19)
-        Me.chkRemember.TabIndex = 6
-        Me.chkRemember.Text = "Remember me"
-        Me.chkRemember.UseVisualStyleBackColor = True
-        '
-        ' lnkForgot
-        '
-        Me.lnkForgot.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(202, Byte), Integer))
-        Me.lnkForgot.AutoSize = True
-        Me.lnkForgot.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lnkForgot.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.lnkForgot.LinkColor = System.Drawing.Color.FromArgb(CType(CType(79, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.lnkForgot.Location = New System.Drawing.Point(220, 225)
-        Me.lnkForgot.Name = "lnkForgot"
-        Me.lnkForgot.Size = New System.Drawing.Size(101, 15)
-        Me.lnkForgot.TabIndex = 7
-        Me.lnkForgot.TabStop = True
-        Me.lnkForgot.Text = "Forgot password?"
-        '
-        ' btnLogin
-        '
-        Me.btnLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(79, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnLogin.FlatAppearance.BorderSize = 0
-        Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLogin.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnLogin.ForeColor = System.Drawing.Color.White
-        Me.btnLogin.Location = New System.Drawing.Point(40, 275)
-        Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(280, 42)
-        Me.btnLogin.TabIndex = 8
-        Me.btnLogin.Text = "Sign In"
-        Me.btnLogin.UseVisualStyleBackColor = False
-        '
-        ' btnClose
-        '
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnClose.ForeColor = System.Drawing.Color.FromArgb(CType(CType(148, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(184, Byte), Integer))
-        Me.btnClose.Location = New System.Drawing.Point(765, 10)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(25, 25)
-        Me.btnClose.TabIndex = 1
-        Me.btnClose.Text = "✕"
-        Me.btnClose.UseVisualStyleBackColor = True
+        Me.dgvLnf.AllowUserToAddRows = False
+        Me.dgvLnf.AllowUserToDeleteRows = False
+        Me.dgvLnf.AllowUserToResizeRows = False
+        dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(252, Byte), Integer))
+        Me.dgvLnf.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1
+        Me.dgvLnf.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvLnf.BackgroundColor = System.Drawing.Color.White
+        Me.dgvLnf.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvLnf.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.dgvLnf.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(249, Byte), Integer))
+        dataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI Semibold", 10.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(105, Byte), Integer))
+        dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(249, Byte), Integer))
+        dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(105, Byte), Integer))
+        dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvLnf.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2
+        Me.dgvLnf.ColumnHeadersHeight = 48
+        Me.dgvLnf.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        dataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        dataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(85, Byte), Integer))
+        dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(255, Byte), Integer))
+        dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(79, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(229, Byte), Integer))
+        dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvLnf.DefaultCellStyle = dataGridViewCellStyle3
+        Me.dgvLnf.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvLnf.EnableHeadersVisualStyles = False
+        Me.dgvLnf.GridColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.dgvLnf.Location = New System.Drawing.Point(1, 1)
+        Me.dgvLnf.MultiSelect = False
+        Me.dgvLnf.Name = "dgvLnf"
+        Me.dgvLnf.ReadOnly = True
+        Me.dgvLnf.RowHeadersVisible = False
+        Me.dgvLnf.RowTemplate.Height = 45
+        Me.dgvLnf.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvLnf.Size = New System.Drawing.Size(1838, 898)
+        Me.dgvLnf.TabIndex = 0
         '
         ' testdesign
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(249, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.btnClose)
-        Me.Controls.Add(Me.pnlCard)
+        Me.ClientSize = New System.Drawing.Size(1920, 1080)
+        Me.Controls.Add(Me.uiPanelGrid)
+        Me.Controls.Add(Me.uiPanelHeader)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "testdesign"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "testdesign"
-        Me.pnlCard.ResumeLayout(False)
-        Me.pnlCard.PerformLayout()
+        Me.uiPanelHeader.ResumeLayout(False)
+        Me.uiPanelHeader.PerformLayout()
+        Me.uiPanelGrid.ResumeLayout(False)
+        CType(Me.dgvLnf, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents pnlCard As System.Windows.Forms.Panel
-    Friend WithEvents lblTitle As System.Windows.Forms.Label
-    Friend WithEvents lblSubtitle As System.Windows.Forms.Label
-    Friend WithEvents lblUsername As System.Windows.Forms.Label
-    Friend WithEvents txtUsername As System.Windows.Forms.TextBox
-    Friend WithEvents lblPassword As System.Windows.Forms.Label
-    Friend WithEvents txtPassword As System.Windows.Forms.TextBox
-    Friend WithEvents chkRemember As System.Windows.Forms.CheckBox
-    Friend WithEvents lnkForgot As System.Windows.Forms.LinkLabel
-    Friend WithEvents btnLogin As System.Windows.Forms.Button
-    Friend WithEvents btnClose As System.Windows.Forms.Button
+    Friend WithEvents uiPanelHeader As System.Windows.Forms.Panel
+    Friend WithEvents uiLabelTitle As System.Windows.Forms.Label
+    Friend WithEvents uiLabelSubtitle As System.Windows.Forms.Label
+    Friend WithEvents viewClose_btn As System.Windows.Forms.Button
+    Friend WithEvents refreshBtn As System.Windows.Forms.Button
+    Friend WithEvents uiPanelGrid As System.Windows.Forms.Panel
+    Friend WithEvents dgvLnf As System.Windows.Forms.DataGridView
 End Class
